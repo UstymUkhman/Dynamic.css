@@ -1,4 +1,4 @@
-./node_modules
-./css/magic.css
-./css/animate.css
-./css/clipboards.css
+node_modules/
+css/magic.css
+css/animate.css
+css/clipboards.css
