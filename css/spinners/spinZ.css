@@ -1,0 +1,133 @@
+@-webkit-keyframes spinZIn {
+  from {
+    -webkit-transform: perspective(400px) scale3d(.1, .1, .1) rotate3d(0, 0, 1, -360deg);
+    transform: perspective(400px) scale3d(.1, .1, .1) rotate3d(0, 0, 1, -360deg);
+    opacity: 0;
+  }
+
+  25% {
+    -webkit-transform: perspective(400px) scale3d(.2, .2, .2) rotate3d(0, 0, 1, -180deg);
+    transform: perspective(400px) scale3d(.2, .2, .2) rotate3d(0, 0, 1, -180deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(.3, .3, .3) rotate3d(0, 0, 1, 0deg);
+    transform: perspective(400px) scale3d(.3, .3, .3) rotate3d(0, 0, 1, 0deg);
+  }
+
+  75% {
+    -webkit-transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, 180deg);
+    transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, 180deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    opacity: 1;
+  }
+}
+
+@keyframes spinZIn {
+  from {
+    -webkit-transform: perspective(400px) scale3d(.1, .1, .1) rotate3d(0, 0, 1, -360deg);
+    transform: perspective(400px) scale3d(.1, .1, .1) rotate3d(0, 0, 1, -360deg);
+    opacity: 0;
+  }
+
+  25% {
+    -webkit-transform: perspective(400px) scale3d(.2, .2, .2) rotate3d(0, 0, 1, -180deg);
+    transform: perspective(400px) scale3d(.2, .2, .2) rotate3d(0, 0, 1, -180deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(.3, .3, .3) rotate3d(0, 0, 1, 0deg);
+    transform: perspective(400px) scale3d(.3, .3, .3) rotate3d(0, 0, 1, 0deg);
+  }
+
+  75% {
+    -webkit-transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, 180deg);
+    transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, 180deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    opacity: 1;
+  }
+}
+
+.spinZIn {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: spinZIn;
+  animation-name: spinZIn;
+}
+
+@-webkit-keyframes spinZOut {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 0, 1, 360deg);
+    transform: perspective(400px) rotate3d(0, 0, 1, 360deg);
+    opacity: 1;
+  }
+
+  25% {
+    -webkit-transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, 180deg);
+    transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, 180deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(.3, .3, .3) rotate3d(0, 0, 1, 0deg);
+    transform: perspective(400px) scale3d(.3, .3, .3) rotate3d(0, 0, 1, 0deg);
+  }
+
+  75% {
+    -webkit-transform: perspective(400px) scale3d(.2, .2, .2) rotate3d(0, 0, 1, -180deg);
+    transform: perspective(400px) scale3d(.2, .2, .2) rotate3d(0, 0, 1, -180deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px) scale3d(.1, .1, .1);
+    transform: perspective(400px) scale3d(.1, .1, .1);
+    opacity: 0;
+  }
+}
+
+@keyframes spinZOut {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 0, 1, 360deg);
+    transform: perspective(400px) rotate3d(0, 0, 1, 360deg);
+    opacity: 1;
+  }
+
+  25% {
+    -webkit-transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, 180deg);
+    transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, 180deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(.3, .3, .3) rotate3d(0, 0, 1, 0deg);
+    transform: perspective(400px) scale3d(.3, .3, .3) rotate3d(0, 0, 1, 0deg);
+  }
+
+  75% {
+    -webkit-transform: perspective(400px) scale3d(.2, .2, .2) rotate3d(0, 0, 1, -180deg);
+    transform: perspective(400px) scale3d(.2, .2, .2) rotate3d(0, 0, 1, -180deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px) scale3d(.1, .1, .1);
+    transform: perspective(400px) scale3d(.1, .1, .1);
+    opacity: 0;
+  }
+}
+
+.spinZOut {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: spinZOut;
+  animation-name: spinZOut;
+}

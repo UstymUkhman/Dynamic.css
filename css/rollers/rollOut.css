@@ -1,0 +1,81 @@
+@-webkit-keyframes rollOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-360deg);
+    transform: translate3d(0, 0, 0) rotate(-360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(200%, 0, 0) rotate(180deg);
+    transform: translate3d(200%, 0, 0) rotate(180deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+}
+
+@keyframes rollOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-360deg);
+    transform: translate3d(0, 0, 0) rotate(-360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(200%, 0, 0) rotate(180deg);
+    transform: translate3d(200%, 0, 0) rotate(180deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+}
+
+.rollOutRight {
+  -webkit-animation-name: rollOutRight;
+  animation-name: rollOutRight;
+}
+
+@-webkit-keyframes rollOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) rotate(360deg);
+    transform: translate3d(0, 0, 0) rotate(360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(-200%, 0, 0) rotate(-180deg);
+    transform: translate3d(-200%, 0, 0) rotate(-180deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+}
+
+@keyframes rollOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) rotate(360deg);
+    transform: translate3d(0, 0, 0) rotate(360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(-200%, 0, 0) rotate(-180deg);
+    transform: translate3d(-200%, 0, 0) rotate(-180deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+}
+
+.rollOutLeft {
+  -webkit-animation-name: rollOutLeft;
+  animation-name: rollOutLeft;
+}
