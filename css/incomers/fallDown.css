@@ -1,3 +1,8 @@
+/*
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+*/
+
 @-webkit-keyframes fallDownRight {
   from {
     -webkit-transform: translate(-50%, -200%) rotateZ(-45deg);

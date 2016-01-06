@@ -1,3 +1,8 @@
+/*
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+*/
+
 @-webkit-keyframes rollDownUp {
   from {
     -webkit-transform: translate3d(0, -200%, 0) rotate3d(0, 1, 0, -180deg);

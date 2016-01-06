@@ -1,78 +1,55 @@
+/*
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+*/
+
 @-webkit-keyframes spinYRight {
   from {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   25% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   50% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   75% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   to {
     -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 }
 
 @keyframes spinYRight {
   from {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   25% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   50% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
     transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   75% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
     transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   to {
-    -webkit-transform: perspective(400px);
     transform: perspective(400px);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 }
 
 .spinYRight {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: spinYRight;
@@ -82,78 +59,50 @@
 @-webkit-keyframes spinYLeft {
   from {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 360deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 360deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   25% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   50% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   75% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   to {
     -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 }
 
 @keyframes spinYLeft {
   from {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 360deg);
     transform: perspective(400px) rotate3d(0, 1, 0, 360deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   25% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
     transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   50% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
     transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   75% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 
   to {
-    -webkit-transform: perspective(400px);
     transform: perspective(400px);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
   }
 }
 
 .spinYLeft {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: spinYLeft;
