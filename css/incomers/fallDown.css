@@ -1,0 +1,85 @@
+@-webkit-keyframes fallDownRight {
+  from {
+    -webkit-transform: translate(-50%, -200%) rotateZ(-45deg);
+  }
+
+  40% {
+    -webkit-transform: translate(-50%, 0) rotateZ(-45deg);
+  }
+
+  80% {
+    -webkit-transform: translate(-34%, 10%) rotateZ(-30deg);
+  }
+
+  to {
+    -webkit-transform: translate(0%, 30%) rotateZ(0deg);
+  }
+}
+
+@keyframes fallDownRight {
+  from {
+    transform: translate(-50%, -200%) rotateZ(-45deg);
+  }
+
+  40% {
+    transform: translate(-50%, 0) rotateZ(-45deg);
+  }
+
+  80% {
+    transform: translate(-34%, 10%) rotateZ(-30deg);
+  }
+
+  to {
+    transform: translate(0%, 30%) rotateZ(0deg);
+  }
+}
+
+.fallDownRight {
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-name: fallDownRight;
+  animation-name: fallDownRight;
+}
+
+@-webkit-keyframes fallDownLeft {
+  from {
+    -webkit-transform: translate(50%, -200%) rotateZ(45deg);
+  }
+
+  40% {
+    -webkit-transform: translate(50%, 0) rotateZ(45deg);
+  }
+
+  80% {
+    -webkit-transform: translate(34%, 10%) rotateZ(30deg);
+  }
+
+  to {
+    -webkit-transform: translate(0%, 30%) rotateZ(0deg);
+  }
+}
+
+@keyframes fallDownLeft {
+  from {
+    transform: translate(50%, -200%) rotateZ(45deg);
+  }
+
+  40% {
+    transform: translate(50%, 0) rotateZ(45deg);
+  }
+
+  80% {
+    transform: translate(34%, 10%) rotateZ(30deg);
+  }
+
+  to {
+    transform: translate(0%, 30%) rotateZ(0deg);
+  }
+}
+
+.fallDownLeft {
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-name: fallDownLeft;
+  animation-name: fallDownLeft;
+}
