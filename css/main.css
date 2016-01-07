@@ -11,3 +11,44 @@
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+@-webkit-keyframes windyX {
+  from {
+    -webkit-transform-origin: 50% 0;
+    -webkit-transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform-origin: 50% 0;
+    -webkit-transform: rotate(-60deg);
+  }
+
+  62% {
+    -webkit-transform-origin: 50% 0;
+    -webkit-transform: rotate(30deg);
+  }
+
+  83% {
+    -webkit-transform-origin: 50% 0;
+    -webkit-transform: rotate(-15deg);
+  }
+
+  95% {
+    -webkit-transform-origin: 50% 0;
+    -webkit-transform: rotate(5deg);
+  }
+
+  to {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+.windyX {
+  -webkit-animation-timing-function: cubic-bezier(.25, .25, 0.58, 1);
+  animation-timing-function: cubic-bezier(.25, .25, 0.58, 1);
+  /*-webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;*/
+  -webkit-animation-name: windyX;
+  animation-name: windyX;
+}
