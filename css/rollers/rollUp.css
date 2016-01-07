@@ -3,9 +3,9 @@
   animation-duration: 1s;
 */
 
-@-webkit-keyframes rollDownUp {
+@-webkit-keyframes rollUpDown {
   from {
-    -webkit-transform: translate3d(0, -200%, 0) rotate3d(0, 1, 0, -180deg);
+    -webkit-transform: translate3d(0, 200%, 0) rotate3d(0, 1, 0, 180deg);
     opacity: 0;
   }
 
@@ -15,35 +15,35 @@
   }
 }
 
-@keyframes rollDownUp {
+@keyframes rollUpDown {
   from {
-    transform: translate3d(0, -200%, 0) rotate3d(0, 1, 0, -180deg);
+    transform: translate3d(0, 200%, 0) rotate3d(0, 1, 0, 180deg);
     opacity: 0;
   }
 
   to {
-    transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);    
+    transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
     opacity: 1;
   }
 }
 
-.rollDownUp {
+.rollUpDown {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
-  -webkit-animation-name: rollDownUp;
-  animation-name: rollDownUp;
+  -webkit-animation-name: rollUpDown;
+  animation-name: rollUpDown;
 }
 
-@-webkit-keyframes rollDownLeft {
+@-webkit-keyframes rollUpLeft {
   from {
-    -webkit-transform: translate3d(0, -200%, 0) rotate3d(0, 1, 0, -180deg);
+    -webkit-transform: translate3d(0, 200%, 0) rotate3d(0, 1, 0, -180deg);
     opacity: 0;
   }
 
   50% {
-    -webkit-transform: translate3d(-100%, -100%, 0) rotate3d(.1, .75, 0, -90deg);
+    -webkit-transform: translate3d(-100%, 100%, 0) rotate3d(.1, .75, 0, -90deg);
   }
 
   to {
@@ -52,14 +52,14 @@
   }
 }
 
-@keyframes rollDownLeft {
+@keyframes rollUpLeft {
   from {
-    transform: translate3d(0, -200%, 0) rotate3d(0, 1, 0, -180deg);
+    transform: translate3d(0, 200%, 0) rotate3d(0, 1, 0, -180deg);
     opacity: 0;
   }
 
   50% {
-    transform: translate3d(-100%, -100%, 0) rotate3d(.1, .75, 0, -90deg);
+    transform: translate3d(-100%, 100%, 0) rotate3d(.1, .75, 0, -90deg);
   }
 
   to {
@@ -68,23 +68,23 @@
   }
 }
 
-.rollDownLeft {
+.rollUpLeft {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
-  -webkit-animation-name: rollDownLeft;
-  animation-name: rollDownLeft;
+  -webkit-animation-name: rollUpLeft;
+  animation-name: rollUpLeft;
 }
 
-@-webkit-keyframes rollDownRight {
+@-webkit-keyframes rollUpRight {
   from {
-    -webkit-transform: translate3d(0, -200%, 0) rotate3d(0, 1, 0, -180deg);
+    -webkit-transform: translate3d(0, 200%, 0) rotate3d(0, 1, 0, -180deg);
     opacity: 0;
   }
 
   50% {
-    -webkit-transform: translate3d(100%, -100%, 0) rotate3d(-0.1, .75, 0, -90deg);
+    -webkit-transform: translate3d(100%, 100%, 0) rotate3d(-0.1, .75, 0, -90deg);
   }
 
   to {
@@ -93,14 +93,14 @@
   }
 }
 
-@keyframes rollDownRight {
+@keyframes rollUpRight {
   from {
-    transform: translate3d(0, -200%, 0) rotate3d(0, 1, 0, -180deg);
+    transform: translate3d(0, 200%, 0) rotate3d(0, 1, 0, -180deg);
     opacity: 0;
   }
 
   50% {
-    transform: translate3d(100%, -100%, 0) rotate3d(-0.1, .75, 0, -90deg);
+    transform: translate3d(100%, 100%, 0) rotate3d(-0.1, .75, 0, -90deg);
   }
 
   to {
@@ -109,11 +109,11 @@
   }
 }
 
-.rollDownRight {
+.rollUpRight {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
-  -webkit-animation-name: rollDownRight;
-  animation-name: rollDownRight;
+  -webkit-animation-name: rollUpRight;
+  animation-name: rollUpRight;
 }

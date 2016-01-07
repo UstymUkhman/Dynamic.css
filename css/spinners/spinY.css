@@ -1,0 +1,110 @@
+/*
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+*/
+
+@-webkit-keyframes spinYRight {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+  }
+
+  25% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
+  }
+
+  75% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+  }
+}
+
+@keyframes spinYRight {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+  }
+
+  25% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
+  }
+
+  50% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
+  }
+
+  75% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.spinYRight {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: spinYRight;
+  animation-name: spinYRight;
+}
+
+@-webkit-keyframes spinYLeft {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 360deg);
+  }
+
+  25% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
+  }
+
+  75% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+  }
+}
+
+@keyframes spinYLeft {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 360deg);
+  }
+
+  25% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+  }
+
+  50% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
+  }
+
+  75% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.spinYLeft {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: spinYLeft;
+  animation-name: spinYLeft;
+}
