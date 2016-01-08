@@ -25,7 +25,8 @@ module.exports = function(grunt) {
           'css/main.css',
           'css/rollers/*.css',
           'css/spinners/*.css',
-          'css/incomers/*.css'
+          'css/incomers/*.css',
+          'css/blinkers/*.css'
         ],
         dest: '<%= pkg.name %>.css'
       }

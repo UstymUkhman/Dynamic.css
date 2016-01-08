@@ -1,6 +1,6 @@
 /*
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
  */
 
 @-webkit-keyframes windyX {
@@ -72,4 +72,85 @@
   animation-timing-function: cubic-bezier(.5, .3, .75, 1);
   -webkit-animation-name: windyX;
   animation-name: windyX;
+}
+
+@-webkit-keyframes windyY {
+  from {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(0deg);
+  }
+
+  20% {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(-60deg);
+  }
+
+  55% {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(45deg);
+  }
+  
+  80% {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(-30deg);
+  }
+
+  95% {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(15deg);
+  }
+
+  98% {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(-5deg);
+  }
+
+  to {
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transform: perspective(800px) rotateX(0deg);
+  }
+}
+
+@keyframes windyY {
+  from {
+    transform-origin: 50% 0%;
+    transform: perspective(800px) rotateX(0deg);
+  }
+
+  20% {
+    transform-origin: 50% 0%;
+    transform: perspective(800px) rotateX(-60deg);
+  }
+
+  55% {
+    transform-origin: 50% 0%;
+    transform: perspective(800px) rotateX(45deg);
+  }
+  
+  80% {
+    transform-origin: 50% 0%;
+    transform: perspective(800px) rotateX(-30deg);
+  }
+
+  95% {
+    transform-origin: 50% 0%;
+    transform: perspective(800px) rotateX(15deg);
+  }
+
+  98% {
+    transform-origin: 50% 0%;
+    transform: perspective(800px) rotateX(-5deg);
+  }
+
+  to {
+    transform-origin: 0% 0%;
+    transform: perspective(800px) rotateX(0deg);
+  }
+}
+
+.windyY {
+  -webkit-animation-timing-function: cubic-bezier(.25, .1, .75, 1);
+  animation-timing-function: cubic-bezier(.25, .1, .75, 1);
+  -webkit-animation-name: windyY;
+  animation-name: windyY;
 }
