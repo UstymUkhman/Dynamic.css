@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 .move {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -11,33 +11,3 @@
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-
-#box {
-    width: 200px;
-    height: 200px;
-    background: black;
-    position: relative;
-    -webkit-transition: all 300ms ease-in;
-}
-#box:hover {
-    -webkit-transform: rotate(90deg) scale(0.8);
-}
-#box:after, #box:before {
-    display: block;
-    content: " ";
-    color: transparent;
-    width: 211px;
-    height: 45px;
-    background-color: inherit;
-    position: absolute;
-    left: 1px;
-    bottom: -20px;
-    -webkit-transform: rotate(-12deg);
-}
-#box:before {
-    bottom: auto;
-    top: -20px;
-    -webkit-transform: rotate(12deg);
-}
-
-http://jsfiddle.net/rudiedirkx/349x9/

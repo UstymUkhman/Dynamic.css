@@ -1,5 +1,5 @@
 #div {
-  top: 300px;
+  top: 250px;
   color: white;
   width: 100px;
   height: 100px;
@@ -15,6 +15,6 @@
 }
 
 #div span {
-  top: 30%;
+  top: 35%;
   position: relative;
 }
