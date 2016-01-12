@@ -1,0 +1,184 @@
+/*
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+*/
+
+@-webkit-keyframes standInUp {
+  from {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(200px) translate3d(0, -200%, -100px) rotateX(-60deg);
+    opacity: 0;
+  }
+
+  85% {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(200px) rotateX(-45deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(200px);
+  }
+}
+
+@keyframes standInUp {
+  from {
+    transform-origin: 50% 0%;
+    transform: perspective(200px) translate3d(0, -200%, -100px) rotateX(-60deg);
+    opacity: 0;
+  }
+
+  85% {
+    transform-origin: 50% 0%;
+    transform: perspective(200px) rotateX(-45deg);
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: 50% 0%;
+    transform: perspective(200px);
+  }
+}
+
+.standInUp {
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-name: standInUp;
+  animation-name: standInUp;
+}
+
+@-webkit-keyframes standInDown {
+  from {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(200px) translate3d(0, 200%, -100px) rotateX(60deg);
+    opacity: 0;
+  }
+
+  85% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(200px) rotateX(45deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(200px);
+  }
+}
+
+@keyframes standInDown {
+  from {
+    transform-origin: 50% 100%;
+    transform: perspective(200px) translate3d(0, 200%, -100px) rotateX(60deg);
+    opacity: 0;
+  }
+
+  85% {
+    transform-origin: 50% 100%;
+    transform: perspective(200px) rotateX(45deg);
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: 50% 100%;
+    transform: perspective(200px);
+  }
+}
+
+.standInDown {
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-name: standInDown;
+  animation-name: standInDown;
+}
+
+@-webkit-keyframes standInLeft {
+  from {
+    -webkit-transform-origin: 0 50%;
+    -webkit-transform: perspective(200px) translate3d(-200%, 0, -100px) scale3d(.5, .5, .5) rotateY(60deg);
+    opacity: 0;
+  }
+
+  85% {
+    -webkit-transform-origin: 0 50%;
+    -webkit-transform: perspective(200px) rotateY(45deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 0 50%;
+    -webkit-transform: perspective(200px);
+  }
+}
+
+@keyframes standInLeft {
+  from {
+    transform-origin: 0 50%;
+    transform: perspective(200px) translate3d(-200%, 0, -100px) scale3d(.5, .5, .5) rotateY(60deg);
+    opacity: 0;
+  }
+
+  85% {
+    transform-origin: 0 50%;
+    transform: perspective(200px) rotateY(45deg);
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: 0 50%;
+    transform: perspective(200px);
+  }
+}
+
+.standInLeft {
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-name: standInLeft;
+  animation-name: standInLeft;
+}
+
+@-webkit-keyframes standInRight {
+  from {
+    -webkit-transform-origin: 100% 50%;
+    -webkit-transform: perspective(200px) translate3d(200%, 0, -100px) scale3d(.5, .5, .5) rotateY(-60deg);
+    opacity: 0;
+  }
+
+  85% {
+    -webkit-transform-origin: 100% 50%;
+    -webkit-transform: perspective(200px) rotateY(-45deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 100% 50%;
+    -webkit-transform: perspective(200px);
+  }
+}
+
+@keyframes standInRight {
+  from {
+    transform-origin: 100% 50%;
+    transform: perspective(200px) translate3d(200%, 0, -100px) scale3d(.5, .5, .5) rotateY(-60deg);
+    opacity: 0;
+  }
+
+  85% {
+    transform-origin: 100% 50%;
+    transform: perspective(200px) rotateY(-45deg);
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: 100% 50%;
+    transform: perspective(200px);
+  }
+}
+
+.standInRight {
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-name: standInRight;
+  animation-name: standInRight;
+}
