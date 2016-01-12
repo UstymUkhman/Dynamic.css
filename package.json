@@ -1,20 +1,22 @@
 {
-  "name": "move",
+  "name": "dynamic",
   "version": "1.0.0",
-  "main": "./css/move.js",
-  "author": "https://github.com/UstymUkhman/Move.css/graphs/contributors",
+  "main": "./dynamic.css",
+  "author": "https://github.com/UstymUkhman/Dynamic.css/graphs/contributors",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/UstymUkhman/Move.css/blob/master/LICENSE"
+    "url": "https://github.com/UstymUkhman/Dynamic.css/blob/master/LICENSE"
   },
-  "homepage": "http://ustymukhman.github.io/Move.css/",
+  "homepage": "http://ustymukhman.github.io/Dynamic.css/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/UstymUkhman/Move.css.git"
+    "url": "https://github.com/UstymUkhman/Dynamic.css.git"
   },
   "keywords": [
-    "Move.css",
-    "Move"
+    "Dynamic.css",
+    "dynamic.css",
+    "Dynamic",
+    "dynamic"
   ],
   "devDependencies": {
     "grunt": "~0.4.5",

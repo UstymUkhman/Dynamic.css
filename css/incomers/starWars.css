@@ -59,7 +59,7 @@
   animation-duration: 2s;
 */
 
-@-webkit-keyframes starWarsInDown {
+@-webkit-keyframes starWarsInFrontDown {
   from {
     -webkit-transform: perspective(200px) translate3d(0, 150%, 100px) rotateX(45deg);
     opacity: 0;
@@ -78,7 +78,7 @@
   }
 }
 
-@keyframes starWarsInDown {
+@keyframes starWarsInFrontDown {
   from {
     transform: perspective(200px) translate3d(0, 150%, 100px) rotateX(45deg);
     opacity: 0;
@@ -97,14 +97,59 @@
   }
 }
 
-.starWarsInDown {
+.starWarsInFrontDown {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: starWarsInDown;
-  animation-name: starWarsInDown;
+  -webkit-animation-name: starWarsInFrontDown;
+  animation-name: starWarsInFrontDown;
 }
 
-@-webkit-keyframes starWarsInUp {
+@-webkit-keyframes starWarsInBackDown {
+  from {
+    -webkit-transform: perspective(800px) translate3d(0, -150%, 100px) scale3d(.5, .5, .5) rotateX(45deg);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  95% {
+    -webkit-transform: perspective(800px) rotateX(45deg);
+  }
+
+  to {
+    -webkit-transform: perspective(800px);
+  }
+}
+
+@keyframes starWarsInBackDown {
+  from {
+    transform: perspective(800px) translate3d(0, -150%, 100px) scale3d(.5, .5, .5) rotateX(45deg);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  95% {
+    transform: perspective(800px) rotateX(45deg);
+  }
+
+  to {
+    transform: perspective(800px);
+  }
+}
+
+.starWarsInBackDown {
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-name: starWarsInBackDown;
+  animation-name: starWarsInBackDown;
+}
+
+@-webkit-keyframes starWarsInFrontUp {
   from {
     -webkit-transform: perspective(200px) translate3d(0, -150%, 100px) rotateX(-45deg);
     opacity: 0;
@@ -123,7 +168,7 @@
   }
 }
 
-@keyframes starWarsInUp {
+@keyframes starWarsInFrontUp {
   from {
     transform: perspective(200px) translate3d(0, -150%, 100px) rotateX(-45deg);
     opacity: 0;
@@ -142,9 +187,54 @@
   }
 }
 
-.starWarsInUp {
+.starWarsInFrontUp {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: starWarsInUp;
-  animation-name: starWarsInUp;
+  -webkit-animation-name: starWarsInFrontUp;
+  animation-name: starWarsInFrontUp;
+}
+
+@-webkit-keyframes starWarsInBackUp {
+  from {
+    -webkit-transform: perspective(800px) translate3d(0, 150%, 100px) scale3d(.5, .5, .5) rotateX(-45deg);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  95% {
+    -webkit-transform: perspective(800px) rotateX(-45deg);
+  }
+
+  to {
+    -webkit-transform: perspective(800px);
+  }
+}
+
+@keyframes starWarsInBackUp {
+  from {
+    transform: perspective(800px) translate3d(0, 150%, 100px) scale3d(.5, .5, .5) rotateX(-45deg);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  95% {
+    transform: perspective(800px) rotateX(-45deg);
+  }
+
+  to {
+    transform: perspective(800px);
+  }
+}
+
+.starWarsInBackUp {
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-name: starWarsInBackUp;
+  animation-name: starWarsInBackUp;
 }

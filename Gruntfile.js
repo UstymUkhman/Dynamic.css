@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
   var mainDesc =
     '/*!\n' +
-    ' * Move.css - Library of CSS3 animations\n' +
+    ' * Dynamic.css - Library of CSS3 animations\n' +
     ' *\n' +
     ' * @version v<%= pkg.version %>\n' +
     ' * @link <%= pkg.homepage %>\n' +

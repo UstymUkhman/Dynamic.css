@@ -1,0 +1,66 @@
+/*
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+*/
+
+@-webkit-keyframes speedOutRight {
+  22% {
+    -webkit-transform: translateX(20%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translateX(200%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes speedOutRight {
+  22% {
+    transform: translateX(20%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(200%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+.speedOutRight {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: speedOutRight;
+  animation-name: speedOutRight;
+}
+
+@-webkit-keyframes speedOutLeft {
+  22% {
+    -webkit-transform: translateX(-20%) skewX(15deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translateX(-200%) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes speedOutLeft {
+  22% {
+    transform: translateX(-20%) skewX(15deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-200%) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+.speedOutLeft {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: speedOutLeft;
+  animation-name: speedOutLeft;
+}

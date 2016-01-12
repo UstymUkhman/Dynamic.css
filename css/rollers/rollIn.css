@@ -3,7 +3,7 @@
   animation-duration: 2s;
 */
 
-@-webkit-keyframes rollInRight {
+@-webkit-keyframes rollInLeft {
   from {
     -webkit-transform: translateX(-200%) rotate(-180deg);
     opacity: 0;
@@ -15,7 +15,7 @@
   }
 }
 
-@keyframes rollInRight {
+@keyframes rollInLeft {
   from {
     transform: translateX(-200%) rotate(-180deg);
     opacity: 0;
@@ -27,14 +27,14 @@
   }
 }
 
-.rollInRight {
+.rollInLeft {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: rollInRight;
-  animation-name: rollInRight;
+  -webkit-animation-name: rollInLeft;
+  animation-name: rollInLeft;
 }
 
-@-webkit-keyframes rollInLeft {
+@-webkit-keyframes rollInRight {
   from {
     -webkit-transform: translate3d(200%, 0, 0) rotate(180deg);
     opacity: 0;
@@ -46,7 +46,7 @@
   }
 }
 
-@keyframes rollInLeft {
+@keyframes rollInRight {
   from {
     transform: translate3d(200%, 0, 0) rotate(180deg);
     opacity: 0;
@@ -58,9 +58,9 @@
   }
 }
 
-.rollInLeft {
+.rollInRight {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: rollInLeft;
-  animation-name: rollInLeft;
+  -webkit-animation-name: rollInRight;
+  animation-name: rollInRight;
 }
