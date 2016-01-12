@@ -3,7 +3,7 @@
   animation-duration: 2s;
 */
 
-@-webkit-keyframes standInUp {
+@-webkit-keyframes comeInUp {
   from {
     -webkit-transform-origin: 50% 0%;
     -webkit-transform: perspective(200px) translate3d(0, -200%, -100px) rotateX(-60deg);
@@ -22,7 +22,7 @@
   }
 }
 
-@keyframes standInUp {
+@keyframes comeInUp {
   from {
     transform-origin: 50% 0%;
     transform: perspective(200px) translate3d(0, -200%, -100px) rotateX(-60deg);
@@ -41,14 +41,14 @@
   }
 }
 
-.standInUp {
+.comeInUp {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: standInUp;
-  animation-name: standInUp;
+  -webkit-animation-name: comeInUp;
+  animation-name: comeInUp;
 }
 
-@-webkit-keyframes standInDown {
+@-webkit-keyframes comeInDown {
   from {
     -webkit-transform-origin: 50% 100%;
     -webkit-transform: perspective(200px) translate3d(0, 200%, -100px) rotateX(60deg);
@@ -67,7 +67,7 @@
   }
 }
 
-@keyframes standInDown {
+@keyframes comeInDown {
   from {
     transform-origin: 50% 100%;
     transform: perspective(200px) translate3d(0, 200%, -100px) rotateX(60deg);
@@ -86,14 +86,14 @@
   }
 }
 
-.standInDown {
+.comeInDown {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: standInDown;
-  animation-name: standInDown;
+  -webkit-animation-name: comeInDown;
+  animation-name: comeInDown;
 }
 
-@-webkit-keyframes standInLeft {
+@-webkit-keyframes comeInLeft {
   from {
     -webkit-transform-origin: 0 50%;
     -webkit-transform: perspective(200px) translate3d(-200%, 0, -100px) scale3d(.5, .5, .5) rotateY(60deg);
@@ -112,7 +112,7 @@
   }
 }
 
-@keyframes standInLeft {
+@keyframes comeInLeft {
   from {
     transform-origin: 0 50%;
     transform: perspective(200px) translate3d(-200%, 0, -100px) scale3d(.5, .5, .5) rotateY(60deg);
@@ -131,14 +131,14 @@
   }
 }
 
-.standInLeft {
+.comeInLeft {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: standInLeft;
-  animation-name: standInLeft;
+  -webkit-animation-name: comeInLeft;
+  animation-name: comeInLeft;
 }
 
-@-webkit-keyframes standInRight {
+@-webkit-keyframes comeInRight {
   from {
     -webkit-transform-origin: 100% 50%;
     -webkit-transform: perspective(200px) translate3d(200%, 0, -100px) scale3d(.5, .5, .5) rotateY(-60deg);
@@ -157,7 +157,7 @@
   }
 }
 
-@keyframes standInRight {
+@keyframes comeInRight {
   from {
     transform-origin: 100% 50%;
     transform: perspective(200px) translate3d(200%, 0, -100px) scale3d(.5, .5, .5) rotateY(-60deg);
@@ -176,9 +176,9 @@
   }
 }
 
-.standInRight {
+.comeInRight {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: standInRight;
-  animation-name: standInRight;
+  -webkit-animation-name: comeInRight;
+  animation-name: comeInRight;
 }

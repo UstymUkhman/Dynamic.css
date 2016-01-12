@@ -26,6 +26,7 @@ module.exports = function(grunt) {
           'css/rollers/*.css',
           'css/spinners/*.css',
           'css/incomers/*.css',
+          'css/leavers/*.css',
           'css/blinkers/*.css',
           'css/sliders/*.css'
         ],
