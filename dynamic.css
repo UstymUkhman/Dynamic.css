@@ -6,19 +6,19 @@
  * @author Ustym Ukhman <ustym.ukhman@gmail.com>
  * @license MIT License, https://github.com/UstymUkhman/Dynamic.css/blob/master/LICENSE
  *
- * Date: 12-01-2016 10:30:59 PM GMT+0100
+ * Date: 16-01-2016 4:33:37 PM GMT+0100
  */
 
 @charset "UTF-8";
 
-.move {
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+.dynamic {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-.move.infinite {
+.dynamic.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
@@ -1617,6 +1617,157 @@
   animation-timing-function: ease-in;
   -webkit-animation-name: comeOutRight;
   animation-name: comeOutRight;
+}
+
+/*
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+*/
+
+@-webkit-keyframes roundOutRight {
+  from {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  15% {
+    -webkit-transform-origin: -50% 50%;
+    -webkit-transform: translate3d(0%, 150%, 0) rotate(90deg);
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  50% {
+    -webkit-transform-origin: -50% 50%;
+    -webkit-transform: translate3d(-100%, -50%, 0) rotate(180deg);
+    -webkit-animation-timing-function: linear;
+  }
+
+  75% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: translate3d(150%, -50%, 0) rotate(450deg);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: translate3d(150%, 100%, 0) rotate(450deg);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+@keyframes roundOutRight {
+  from {
+    transform-origin: 0 0;
+    transform: rotate(0deg);
+    animation-timing-function: ease-in;
+  }
+
+  15% {
+    transform-origin: -50% 50%;
+    transform: translate3d(0%, 150%, 0) rotate(90deg);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform-origin: -50% 50%;
+    transform: translate3d(-100%, -50%, 0) rotate(180deg);
+    animation-timing-function: linear;
+  }
+
+  75% {
+    transform-origin: 50% 100%;
+    transform: translate3d(150%, -50%, 0) rotate(450deg);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: 50% 100%;
+    transform: translate3d(150%, 100%, 0) rotate(450deg);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+.roundOutRight {
+  -webkit-animation-name: roundOutRight;
+  animation-name: roundOutRight;
+}
+
+@-webkit-keyframes roundOutLeft {
+  from {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  15% {
+    -webkit-transform-origin: 150% 50%;
+    -webkit-transform: translate3d(0%, 150%, 0) rotate(-90deg);
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  50% {
+    -webkit-transform-origin: 150% 50%;
+    -webkit-transform: translate3d(100%, -50%, 0) rotate(-180deg);
+    -webkit-animation-timing-function: linear;
+  }
+
+  75% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: translate3d(-150%, -50%, 0) rotate(-450deg);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: translate3d(-150%, 100%, 0) rotate(-450deg);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+@keyframes roundOutLeft {
+  from {
+    transform-origin: 0 0;
+    transform: rotate(0deg);
+    animation-timing-function: ease-in;
+  }
+
+  15% {
+    transform-origin: 150% 50%;
+    transform: translate3d(0%, 150%, 0) rotate(-90deg);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform-origin: 150% 50%;
+    transform: translate3d(100%, -50%, 0) rotate(-180deg);
+    animation-timing-function: linear;
+  }
+
+  75% {
+    transform-origin: 50% 100%;
+    transform: translate3d(-150%, -50%, 0) rotate(-450deg);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: 50% 100%;
+    transform: translate3d(-150%, 100%, 0) rotate(-450deg);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+.roundOutLeft {
+  -webkit-animation-name: roundOutLeft;
+  animation-name: roundOutLeft;
 }
 
 /*
