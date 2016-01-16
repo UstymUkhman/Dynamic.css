@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
-.move {
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+.dynamic {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-.move.infinite {
+.dynamic.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
