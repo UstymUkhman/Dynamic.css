@@ -1,77 +1,43 @@
 /*
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
 */
 
-@-webkit-keyframes fallDown {
+@-webkit-keyframes fallDownUp {
   from {
-    -webkit-transform-origin: 0 100%;
     -webkit-transform: translateY(-200%) perspective(600px);
+    opacity: 0;
   }
 
-  30% {
-    -webkit-transform-origin: 0 100%;
+  40% {
+    opacity: 1;
+  }
+
+  to {
     -webkit-transform: translateY(0) perspective(600px) rotateX(0deg);
   }
+}
 
-  70% {
-    -webkit-transform-origin: 0 100%;
-    -webkit-transform: perspective(600px) rotateX(-15deg);
+@keyframes fallDownUp {
+  from {
+    transform: translateY(-200%) perspective(600px);
+    opacity: 0;
   }
 
-  80% {
-    -webkit-transform-origin: 0 100%;
-    -webkit-transform: perspective(600px) rotateX(-30deg);
-  }
-
-  90% {
-    -webkit-transform-origin: 0 100%;
-    -webkit-transform: perspective(600px) rotateX(-45deg);
+  40% {
+    opacity: 1;
   }
 
   to {
-    -webkit-transform-origin: 0 100%;
-    -webkit-transform: perspective(600px) rotateX(-90deg);
-  }
-}
-
-@keyframes fallDown {
-  from {
-    transform-origin: 0 100%;
-    transform: translateY(-200%) perspective(600px);
-  }
-
-  30% {
-    transform-origin: 0 100%;
     transform: translateY(0) perspective(600px) rotateX(0deg);
   }
-
-  70% {
-    transform-origin: 0 100%;
-    transform: perspective(600px) rotateX(-15deg);
-  }
-
-  80% {
-    transform-origin: 0 100%;
-    transform: perspective(600px) rotateX(-30deg);
-  }
-
-  90% {
-    transform-origin: 0 100%;
-    transform: perspective(600px) rotateX(-45deg);
-  }
-
-  to {
-    transform-origin: 0 100%;
-    transform: perspective(600px) rotateX(-90deg);
-  }
 }
 
-.fallDown {
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -webkit-animation-name: fallDown;
-  animation-name: fallDown;
+.fallDownUp {
+  -webkit-animation-timing-function: cubic-bezier(.75, 0, 1, 1);
+  animation-timing-function: cubic-bezier(.75, 0, 1, 1);
+  -webkit-animation-name: fallDownUp;
+  animation-name: fallDownUp;
 }
 
 /*
@@ -79,13 +45,76 @@
   animation-duration: 1s;
 */
 
+@-webkit-keyframes fallDownDown {
+  from {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: translateY(0) perspective(600px) rotateX(0deg);
+  }
+
+  70% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(600px) rotateX(-15deg);
+  }
+
+  80% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(600px) rotateX(-30deg);
+  }
+
+  90% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(600px) rotateX(-45deg);
+  }
+
+  to {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+  }
+}
+
+@keyframes fallDownDown {
+  from {
+    transform-origin: 50% 100%;
+    transform: translateY(0) perspective(600px) rotateX(0deg);
+  }
+
+  70% {
+    transform-origin: 50% 100%;
+    transform: perspective(600px) rotateX(-15deg);
+  }
+
+  80% {
+    transform-origin: 50% 100%;
+    transform: perspective(600px) rotateX(-30deg);
+  }
+
+  90% {
+    transform-origin: 50% 100%;
+    transform: perspective(600px) rotateX(-45deg);
+  }
+
+  to {
+    transform-origin: 50% 100%;
+    transform: perspective(600px) rotateX(-90deg);
+  }
+}
+
+.fallDownDown {
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-name: fallDownDown;
+  animation-name: fallDownDown;
+}
+
 @-webkit-keyframes fallDownRight {
   from {
     -webkit-transform: translate(-50%, -200%) rotateZ(-45deg);
+    opacity: 0;
   }
 
   40% {
     -webkit-transform: translate(-50%, 0) rotateZ(-45deg);
+    opacity: 1;
   }
 
   80% {
@@ -100,10 +129,12 @@
 @keyframes fallDownRight {
   from {
     transform: translate(-50%, -200%) rotateZ(-45deg);
+    opacity: 0;
   }
 
   40% {
     transform: translate(-50%, 0) rotateZ(-45deg);
+    opacity: 1;
   }
 
   80% {
@@ -125,10 +156,12 @@
 @-webkit-keyframes fallDownLeft {
   from {
     -webkit-transform: translate(50%, -200%) rotateZ(45deg);
+    opacity: 0;
   }
 
   40% {
     -webkit-transform: translate(50%, 0) rotateZ(45deg);
+    opacity: 1;
   }
 
   80% {
@@ -143,10 +176,12 @@
 @keyframes fallDownLeft {
   from {
     transform: translate(50%, -200%) rotateZ(45deg);
+    opacity: 0;
   }
 
   40% {
     transform: translate(50%, 0) rotateZ(45deg);
+    opacity: 1;
   }
 
   80% {

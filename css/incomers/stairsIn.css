@@ -1,0 +1,209 @@
+/*
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+*/
+
+@-webkit-keyframes stairsIn {
+  from, 25%, 49%, 76%, 99% {
+    -webkit-transform-origin: 50% 0%;
+  }
+
+  50%, 75%, to {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  from {
+    -webkit-transform: translateY(-200%) perspective(400px) rotateX(540deg);
+    opacity: 0;
+  }
+
+  25% {
+    -webkit-transform: translateY(-200%) perspective(400px) rotateX(540deg);
+    opacity: .5;
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%) perspective(400px) rotateX(360deg);
+  }
+
+  75% {
+    -webkit-transform: translateY(-200%) perspective(400px) rotateX(180deg);
+  }
+
+  76% {
+    -webkit-transform: translateY(0%) perspective(400px) rotateX(180deg);
+  }
+
+  99% {
+    -webkit-transform: translateY(0%) perspective(400px) rotateX(7deg);
+  }
+
+  to {    
+    -webkit-transform: translateY(0%) perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes stairsIn {
+  from, 25%, 49%, 76%, 99% {
+    transform-origin: 50% 0%;
+  }
+
+  50%, 75%, to {
+    transform-origin: 50% 100%;
+  }
+
+  from {
+    transform: translateY(-200%) perspective(400px) rotateX(540deg);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateY(-200%) perspective(400px) rotateX(540deg);
+    opacity: .5;
+  }
+
+  50% {
+    transform: translateY(-200%) perspective(400px) rotateX(360deg);
+  }
+
+  75% {
+    transform: translateY(-200%) perspective(400px) rotateX(180deg);
+  }
+
+  76% {
+    transform: translateY(0%) perspective(400px) rotateX(180deg);
+  }
+
+  99% {
+    transform: translateY(0%) perspective(400px) rotateX(7deg);
+  }
+
+  to {    
+    transform: translateY(0%) perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.stairsIn {
+  -webkit-animation-timing-function: cubic-bezier(.63, 0, 1, 1);
+  animation-timing-function: cubic-bezier(.63, 0, 1, 1);
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: stairsIn;
+  animation-name: stairsIn;
+}
+
+@-webkit-keyframes stairsInLeft {
+  from {
+    -webkit-transform: translate3d(-300%, -300%, 0) rotate(-270deg);
+    opacity: 0;
+  }
+
+  25% {
+    -webkit-transform: translate3d(-300%, -300%, 0) rotate(-270deg);
+    opacity: .5;
+  }
+
+  50% {
+    -webkit-transform: translate3d(-200%, -200%, 0) rotate(-180deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-100%, -100%, 0) rotate(-90deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes stairsInLeft {
+  from {
+    transform: translate3d(-300%, -300%, 0) rotate(-270deg);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translate3d(-300%, -300%, 0) rotate(-270deg);
+    opacity: .5;
+  }
+
+  50% {
+    transform: translate3d(-200%, -200%, 0) rotate(-180deg);
+  }
+
+  75% {
+    transform: translate3d(-100%, -100%, 0) rotate(-90deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.stairsInLeft {
+  -webkit-animation-timing-function: cubic-bezier(.63, 0, 1, 1);
+  animation-timing-function: cubic-bezier(.63, 0, 1, 1);
+  -webkit-animation-name: stairsInLeft;
+  animation-name: stairsInLeft;
+}
+
+@-webkit-keyframes stairsInRight {
+  from {
+    -webkit-transform: translate3d(300%, -300%, 0) rotate(270deg);
+    opacity: 0;
+  }
+
+  25% {
+    -webkit-transform: translate3d(300%, -300%, 0) rotate(270deg);
+    opacity: .5;
+  }
+
+  50% {
+    -webkit-transform: translate3d(200%, -200%, 0) rotate(180deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(100%, -100%, 0) rotate(90deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes stairsInRight {
+  from {
+    transform: translate3d(300%, -300%, 0) rotate(270deg);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translate3d(300%, -300%, 0) rotate(270deg);
+    opacity: .5;
+  }
+
+  50% {
+    transform: translate3d(200%, -200%, 0) rotate(180deg);
+  }
+
+  75% {
+    transform: translate3d(100%, -100%, 0) rotate(90deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.stairsInRight {
+  -webkit-animation-timing-function: cubic-bezier(.63, 0, 1, 1);
+  animation-timing-function: cubic-bezier(.63, 0, 1, 1);
+  -webkit-animation-name: stairsInRight;
+  animation-name: stairsInRight;
+}
