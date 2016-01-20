@@ -13,29 +13,29 @@
   }
 
   from {
-    -webkit-transform: translateY(-200%) perspective(400px) rotateX(540deg);
+    -webkit-transform: translateY(-200%) perspective(400px) scale3d(.4, .4, .4) rotateX(540deg);
     opacity: 0;
   }
 
   25% {
-    -webkit-transform: translateY(-200%) perspective(400px) rotateX(540deg);
+    -webkit-transform: translateY(-200%) perspective(400px) scale3d(.4, .4, .4) rotateX(540deg);
     opacity: .5;
   }
 
   50% {
-    -webkit-transform: translateY(-200%) perspective(400px) rotateX(360deg);
+    -webkit-transform: translateY(-200%) perspective(400px) scale3d(.6, .6, .6) rotateX(360deg);
   }
 
   75% {
-    -webkit-transform: translateY(-200%) perspective(400px) rotateX(180deg);
+    -webkit-transform: translateY(-200%) perspective(400px) scale3d(.8, .8, .8) rotateX(180deg);
   }
 
   76% {
-    -webkit-transform: translateY(0%) perspective(400px) rotateX(180deg);
+    -webkit-transform: translateY(0%) perspective(400px) scale3d(.8, .8, .8) rotateX(180deg);
   }
 
   99% {
-    -webkit-transform: translateY(0%) perspective(400px) rotateX(7deg);
+    -webkit-transform: translateY(0%) perspective(400px) scale3d(.95, .95, .95) rotateX(7deg);
   }
 
   to {    
@@ -54,29 +54,29 @@
   }
 
   from {
-    transform: translateY(-200%) perspective(400px) rotateX(540deg);
+    transform: translateY(-200%) perspective(400px) scale3d(.4, .4, .4) rotateX(540deg);
     opacity: 0;
   }
 
   25% {
-    transform: translateY(-200%) perspective(400px) rotateX(540deg);
+    transform: translateY(-200%) perspective(400px) scale3d(.4, .4, .4) rotateX(540deg);
     opacity: .5;
   }
 
   50% {
-    transform: translateY(-200%) perspective(400px) rotateX(360deg);
+    transform: translateY(-200%) perspective(400px) scale3d(.6, .6, .6) rotateX(360deg);
   }
 
   75% {
-    transform: translateY(-200%) perspective(400px) rotateX(180deg);
+    transform: translateY(-200%) perspective(400px) scale3d(.8, .8, .8) rotateX(180deg);
   }
 
   76% {
-    transform: translateY(0%) perspective(400px) rotateX(180deg);
+    transform: translateY(0%) perspective(400px) scale3d(.8, .8, .8) rotateX(180deg);
   }
 
   99% {
-    transform: translateY(0%) perspective(400px) rotateX(7deg);
+    transform: translateY(0%) perspective(400px) scale3d(.95, .95, .95) rotateX(7deg);
   }
 
   to {    
