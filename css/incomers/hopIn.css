@@ -1,8 +1,3 @@
-/*
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-*/
-
 @-webkit-keyframes hopIn {
   from {
     -webkit-transform: translateY(-200%);

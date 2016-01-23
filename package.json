@@ -1,11 +1,13 @@
 {
-  "name": "dynamic",
+  "name": "Dynamic.css",
+  "description": "Awesome Library of CSS3 animations",
   "version": "1.0.0",
+  "filename": "dynamic",
   "main": "./dynamic.css",
   "author": "https://github.com/UstymUkhman/Dynamic.css/graphs/contributors",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/UstymUkhman/Dynamic.css/blob/master/LICENSE"
+    "url": "http://opensource.org/licenses/MIT"
   },
   "homepage": "http://ustymukhman.github.io/Dynamic.css/",
   "repository": {

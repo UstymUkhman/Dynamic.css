@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
   var mainDesc =
     '/*!\n' +
-    ' * Dynamic.css - Library of CSS3 animations\n' +
+    ' * <%= pkg.name %> - <%= pkg.description %>\n' +
     ' *\n' +
     ' * @version v<%= pkg.version %>\n' +
     ' * @link <%= pkg.homepage %>\n' +
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
           'css/blinkers/*.css',
           'css/sliders/*.css'
         ],
-        dest: '<%= pkg.name %>.css'
+        dest: '<%= pkg.filename %>.css'
       }
     }
   });

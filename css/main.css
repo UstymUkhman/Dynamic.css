@@ -11,3 +11,64 @@
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+.dynamic.speedInLeft,
+.dynamic.speedInRight,
+.dynamic.speedOutLeft,
+.dynamic.speedOutRight {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+.dynamic.spinXUp,
+.dynamic.spinXDown,
+.dynamic.spinYRight,
+.dynamic.spinYLeft,
+.dynamic.spinZIn,
+.dynamic.spinZOut,
+.dynamic.fallDownUp {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+.dynamic.fallDownDown,
+.dynamic.fallDownLeft,
+.dynamic.fallDownRight,
+.dynamic.rollOutLeft,
+.dynamic.rollOutRight,
+.dynamic.rollUpDown,
+.dynamic.rollUpLeft,
+.dynamic.rollUpRight,
+.dynamic.rollDownUp,
+.dynamic.rollDownLeft,
+.dynamic.rollDownRight {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.dynamic.windyX,
+.dynamic.windyY {
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+}
+
+.dynamic.hopIn,
+.dynamic.hopInLeft,
+.dynamic.hopInRight,
+.dynamic.hopOut,
+.dynamic.hopOutLeft,
+.dynamic.hopOutRight {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.dynamic.roundSlideRight,
+.dynamic.roundSlideLeft {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.starWars {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}

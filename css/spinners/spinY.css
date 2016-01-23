@@ -1,8 +1,3 @@
-/*
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-*/
-
 @-webkit-keyframes spinYRight {
   from {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);

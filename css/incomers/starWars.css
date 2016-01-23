@@ -1,8 +1,3 @@
-/*
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
-*/
-
 @-webkit-keyframes starWars {
   from {
     -webkit-transform: perspective(200px) translate3d(0, 150%, 100px) rotateX(45deg);
@@ -54,12 +49,7 @@
   animation-name: starWars;
 }
 
-/*
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-*/
-
-@-webkit-keyframes starWarsInFrontDown {
+@-webkit-keyframes starWarsFrontDown {
   from {
     -webkit-transform: perspective(200px) translate3d(0, 150%, 100px) rotateX(45deg);
     opacity: 0;
@@ -78,7 +68,7 @@
   }
 }
 
-@keyframes starWarsInFrontDown {
+@keyframes starWarsFrontDown {
   from {
     transform: perspective(200px) translate3d(0, 150%, 100px) rotateX(45deg);
     opacity: 0;
@@ -97,14 +87,14 @@
   }
 }
 
-.starWarsInFrontDown {
+.starWarsFrontDown {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: starWarsInFrontDown;
-  animation-name: starWarsInFrontDown;
+  -webkit-animation-name: starWarsFrontDown;
+  animation-name: starWarsFrontDown;
 }
 
-@-webkit-keyframes starWarsInBackDown {
+@-webkit-keyframes starWarsBackDown {
   from {
     -webkit-transform: perspective(800px) translate3d(0, -150%, 100px) scale3d(.5, .5, .5) rotateX(45deg);
     opacity: 0;
@@ -123,7 +113,7 @@
   }
 }
 
-@keyframes starWarsInBackDown {
+@keyframes starWarsBackDown {
   from {
     transform: perspective(800px) translate3d(0, -150%, 100px) scale3d(.5, .5, .5) rotateX(45deg);
     opacity: 0;
@@ -142,14 +132,14 @@
   }
 }
 
-.starWarsInBackDown {
+.starWarsBackDown {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: starWarsInBackDown;
-  animation-name: starWarsInBackDown;
+  -webkit-animation-name: starWarsBackDown;
+  animation-name: starWarsBackDown;
 }
 
-@-webkit-keyframes starWarsInFrontUp {
+@-webkit-keyframes starWarsFrontUp {
   from {
     -webkit-transform: perspective(200px) translate3d(0, -150%, 100px) rotateX(-45deg);
     opacity: 0;
@@ -168,7 +158,7 @@
   }
 }
 
-@keyframes starWarsInFrontUp {
+@keyframes starWarsFrontUp {
   from {
     transform: perspective(200px) translate3d(0, -150%, 100px) rotateX(-45deg);
     opacity: 0;
@@ -187,14 +177,14 @@
   }
 }
 
-.starWarsInFrontUp {
+.starWarsFrontUp {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: starWarsInFrontUp;
-  animation-name: starWarsInFrontUp;
+  -webkit-animation-name: starWarsFrontUp;
+  animation-name: starWarsFrontUp;
 }
 
-@-webkit-keyframes starWarsInBackUp {
+@-webkit-keyframes starWarsBackUp {
   from {
     -webkit-transform: perspective(800px) translate3d(0, 150%, 100px) scale3d(.5, .5, .5) rotateX(-45deg);
     opacity: 0;
@@ -213,7 +203,7 @@
   }
 }
 
-@keyframes starWarsInBackUp {
+@keyframes starWarsBackUp {
   from {
     transform: perspective(800px) translate3d(0, 150%, 100px) scale3d(.5, .5, .5) rotateX(-45deg);
     opacity: 0;
@@ -232,9 +222,9 @@
   }
 }
 
-.starWarsInBackUp {
+.starWarsBackUp {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: starWarsInBackUp;
-  animation-name: starWarsInBackUp;
+  -webkit-animation-name: starWarsBackUp;
+  animation-name: starWarsBackUp;
 }

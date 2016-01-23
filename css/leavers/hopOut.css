@@ -1,8 +1,3 @@
-/*
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-*/
-
 @-webkit-keyframes hopOut {
   from, 20%, 50%, 80% {
     -webkit-transform: translateY(0%);

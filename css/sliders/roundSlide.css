@@ -1,8 +1,3 @@
-/* 
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
- */
-
 @-webkit-keyframes roundSlideRight {
   from {
     -webkit-transform: translate3d(0, -100%, 0) rotate3d(0, 1, 0, -180deg);
