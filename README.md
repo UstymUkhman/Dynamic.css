@@ -32,16 +32,12 @@ It's perfect to animate incoming and leaving web page elements, but it also coul
   * `spinYLeft`
   * `spinYRight`
   * `spinZIn`
-  * `spinZOut`
-<br><br>
-
+  * `spinZOut`<br>
   * `starWars`
   * `starWarsFrontUp`
   * `starWarsFrontDown`
   * `starWarsBackUp`
-  * `starWarsBackDown`
-<br><br>
-
+  * `starWarsBackDown`<br>
   * `comeInLeft`
   * `comeInUp`
   * `comeInDown`
@@ -49,56 +45,41 @@ It's perfect to animate incoming and leaving web page elements, but it also coul
   * `comeOutLeft`
   * `comeOutUp`
   * `comeOutDown`
-  * `comeOutRight`
-<br><br>
-
+  * `comeOutRight`<br>
   * `speedInLeft`
   * `speedInRight`
   * `speedOutLeft`
-  * `speedOutRight`
-<br><br>
-
+  * `speedOutRight`<br>
   * `stairsInLeft`
   * `stairsIn`
   * `stairsInRight`
   * `stairsOutLeft`
   * `stairsOut`
-  * `stairsOutRight`
-<br><br>
-
+  * `stairsOutRight`<br>
   * `hopInLeft`
   * `hopIn`
   * `hopInRight`
   * `hopOutLeft`
   * `hopOut`
-  * `hopOutRight`
-<br><br>
-
+  * `hopOutRight`<br>
   * `rollInLeft`
   * `rollInRight`
   * `rollOutLeft`
-  * `rollOutRight`
-<br><br>
-
+  * `rollOutRight`<br>
   * `rollUpLeft`
   * `rollUpDown`
   * `rollUpRight`
   * `rollDownLeft`
   * `rollDownUp`
-  * `rollDownRight`
-<br><br>
-
+  * `rollDownRight`<br>
   * `fallDownLeft`
   * `fallDownUp`
   * `fallDownDown`
-  * `fallDownRight`
-<br><br>
-
+  * `fallDownRight`<br>
   * `roundOutLeft`
   * `roundOutRight`
   * `roundSlideLeft`
-  * `roundSlideRight`
-<br><br>
+  * `roundSlideRight`<br>
 
 ## License
 Animate.css is licensed under the [MIT license](http://opensource.org/licenses/MIT).
