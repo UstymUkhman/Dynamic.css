@@ -11,7 +11,7 @@
   }
 
   20% {
-    -webkit-transform: translateY(0%);
+    -webkit-transform: translateY(0);
     -webkit-animation-timing-function: ease-in;
   }
 
@@ -20,8 +20,8 @@
     -webkit-animation-timing-function: linear;
   }
 
-  40% {
-    -webkit-transform: translateY(0%);
+  40%, 60%, 80%, 90%, to {
+    -webkit-transform: translateY(0);
     -webkit-animation-timing-function: linear;
   }
 
@@ -30,18 +30,8 @@
     -webkit-animation-timing-function: linear;
   }
 
-  60% {
-    -webkit-transform: translateY(0%);
-    -webkit-animation-timing-function: linear;
-  }
-
   70% {
     -webkit-transform: translateY(-40%);
-    -webkit-animation-timing-function: linear;
-  }
-
-  80% {
-    -webkit-transform: translateY(0%);
     -webkit-animation-timing-function: linear;
   }
 
@@ -50,18 +40,8 @@
     -webkit-animation-timing-function: linear;
   }
 
-  90% {
-    -webkit-transform: translateY(0%);
-    -webkit-animation-timing-function: linear;
-  }
-
   95% {
     -webkit-transform: translateY(-5%);
-    -webkit-animation-timing-function: linear;
-  }
-
-  to {
-    -webkit-transform: translateY(0);
     -webkit-animation-timing-function: linear;
     opacity: 1;
   }
@@ -75,7 +55,7 @@
   }
 
   20% {
-    transform: translateY(0%);
+    transform: translateY(0);
     animation-timing-function: ease-in;
   }
 
@@ -84,8 +64,8 @@
     animation-timing-function: linear;
   }
 
-  40% {
-    transform: translateY(0%);
+  40%, 60%, 80%, 90%, to {
+    transform: translateY(0);
     animation-timing-function: linear;
   }
 
@@ -94,18 +74,8 @@
     animation-timing-function: linear;
   }
 
-  60% {
-    transform: translateY(0%);
-    animation-timing-function: linear;
-  }
-
   70% {
     transform: translateY(-40%);
-    animation-timing-function: linear;
-  }
-
-  80% {
-    transform: translateY(0%);
     animation-timing-function: linear;
   }
 
@@ -114,18 +84,8 @@
     animation-timing-function: linear;
   }
 
-  90% {
-    transform: translateY(0%);
-    animation-timing-function: linear;
-  }
-
   95% {
     transform: translateY(-5%);
-    animation-timing-function: linear;
-  }
-
-  to {
-    transform: translateY(0);
     animation-timing-function: linear;
     opacity: 1;
   }
@@ -144,7 +104,7 @@
   }
 
   20% {
-    -webkit-transform: translate3d(-140%, 0%, 0) rotate(72deg);
+    -webkit-transform: translate3d(-140%, 0, 0) rotate(72deg);
     -webkit-animation-timing-function: ease-in;
   }
 
@@ -154,7 +114,7 @@
   }
 
   40% {
-    -webkit-transform: translate3d(-100%, 0%, 0) rotate(144deg);
+    -webkit-transform: translate3d(-100%, 0, 0) rotate(144deg);
     -webkit-animation-timing-function: linear;
   }
 
@@ -164,7 +124,7 @@
   }
 
   60% {
-    -webkit-transform: translate3d(-50%, 0%, 0) rotate(216deg);
+    -webkit-transform: translate3d(-50%, 0, 0) rotate(216deg);
     -webkit-animation-timing-function: linear;
   }
 
@@ -174,7 +134,7 @@
   }
 
   80% {
-    -webkit-transform: translate3d(-15%, 0%, 0) rotate(288deg);
+    -webkit-transform: translate3d(-15%, 0, 0) rotate(288deg);
     -webkit-animation-timing-function: linear;
   }
 
@@ -184,7 +144,7 @@
   }
 
   90% {
-    -webkit-transform: translate3d(-5%, 0%, 0) rotate(324deg);
+    -webkit-transform: translate3d(-5%, 0, 0) rotate(324deg);
     -webkit-animation-timing-function: linear;
   }
 
@@ -208,7 +168,7 @@
   }
 
   20% {
-    transform: translate3d(-140%, 0%, 0) rotate(72deg);
+    transform: translate3d(-140%, 0, 0) rotate(72deg);
     animation-timing-function: ease-in;
   }
 
@@ -218,7 +178,7 @@
   }
 
   40% {
-    transform: translate3d(-100%, 0%, 0) rotate(144deg);
+    transform: translate3d(-100%, 0, 0) rotate(144deg);
     animation-timing-function: linear;
   }
 
@@ -228,7 +188,7 @@
   }
 
   60% {
-    transform: translate3d(-50%, 0%, 0) rotate(216deg);
+    transform: translate3d(-50%, 0, 0) rotate(216deg);
     animation-timing-function: linear;
   }
 
@@ -238,7 +198,7 @@
   }
 
   80% {
-    transform: translate3d(-15%, 0%, 0) rotate(288deg);
+    transform: translate3d(-15%, 0, 0) rotate(288deg);
     animation-timing-function: linear;
   }
 
@@ -248,7 +208,7 @@
   }
 
   90% {
-    transform: translate3d(-5%, 0%, 0) rotate(324deg);
+    transform: translate3d(-5%, 0, 0) rotate(324deg);
     animation-timing-function: linear;
   }
 
@@ -277,7 +237,7 @@
   }
 
   20% {
-    -webkit-transform: translate3d(140%, 0%, 0) rotate(-72deg);
+    -webkit-transform: translate3d(140%, 0, 0) rotate(-72deg);
     -webkit-animation-timing-function: ease-in;
   }
 
@@ -287,7 +247,7 @@
   }
 
   40% {
-    -webkit-transform: translate3d(100%, 0%, 0) rotate(-144deg);
+    -webkit-transform: translate3d(100%, 0, 0) rotate(-144deg);
     -webkit-animation-timing-function: linear;
   }
 
@@ -297,7 +257,7 @@
   }
 
   60% {
-    -webkit-transform: translate3d(50%, 0%, 0) rotate(-216deg);
+    -webkit-transform: translate3d(50%, 0, 0) rotate(-216deg);
     -webkit-animation-timing-function: linear;
   }
 
@@ -307,7 +267,7 @@
   }
 
   80% {
-    -webkit-transform: translate3d(15%, 0%, 0) rotate(-288deg);
+    -webkit-transform: translate3d(15%, 0, 0) rotate(-288deg);
     -webkit-animation-timing-function: linear;
   }
 
@@ -317,7 +277,7 @@
   }
 
   90% {
-    -webkit-transform: translate3d(5%, 0%, 0) rotate(-324deg);
+    -webkit-transform: translate3d(5%, 0, 0) rotate(-324deg);
     -webkit-animation-timing-function: linear;
   }
 
@@ -341,7 +301,7 @@
   }
 
   20% {
-    transform: translate3d(140%, 0%, 0) rotate(-72deg);
+    transform: translate3d(140%, 0, 0) rotate(-72deg);
     animation-timing-function: ease-in;
   }
 
@@ -351,7 +311,7 @@
   }
 
   40% {
-    transform: translate3d(100%, 0%, 0) rotate(-144deg);
+    transform: translate3d(100%, 0, 0) rotate(-144deg);
     animation-timing-function: linear;
   }
 
@@ -361,7 +321,7 @@
   }
 
   60% {
-    transform: translate3d(50%, 0%, 0) rotate(-216deg);
+    transform: translate3d(50%, 0, 0) rotate(-216deg);
     animation-timing-function: linear;
   }
 
@@ -371,7 +331,7 @@
   }
 
   80% {
-    transform: translate3d(15%, 0%, 0) rotate(-288deg);
+    transform: translate3d(15%, 0, 0) rotate(-288deg);
     animation-timing-function: linear;
   }
 
@@ -381,7 +341,7 @@
   }
 
   90% {
-    transform: translate3d(5%, 0%, 0) rotate(-324deg);
+    transform: translate3d(5%, 0, 0) rotate(-324deg);
     animation-timing-function: linear;
   }
 
