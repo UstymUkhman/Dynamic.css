@@ -1,12 +1,12 @@
 /*!
- * Dynamic.css - Library of CSS3 animations
+ * Dynamic.css - Awesome Library of CSS3 animations
  *
  * @version v1.0.0
  * @link http://ustymukhman.github.io/Dynamic.css/
  * @author Ustym Ukhman <ustym.ukhman@gmail.com>
- * @license MIT License, https://github.com/UstymUkhman/Dynamic.css/blob/master/LICENSE
+ * @license MIT License, http://opensource.org/licenses/MIT
  *
- * Date: 23-01-2016 2:04:13 AM GMT+0100
+ * Date: 23-01-2016 3:12:36 PM GMT+0100
  */
 
 @charset "UTF-8";
@@ -23,10 +23,66 @@
   animation-iteration-count: infinite;
 }
 
-/*
+.dynamic.speedInLeft,
+.dynamic.speedInRight,
+.dynamic.speedOutLeft,
+.dynamic.speedOutRight {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+.dynamic.spinXUp,
+.dynamic.spinXDown,
+.dynamic.spinYRight,
+.dynamic.spinYLeft,
+.dynamic.spinZIn,
+.dynamic.spinZOut,
+.dynamic.fallDownUp {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+.dynamic.fallDownDown,
+.dynamic.fallDownLeft,
+.dynamic.fallDownRight,
+.dynamic.rollOutLeft,
+.dynamic.rollOutRight,
+.dynamic.rollUpDown,
+.dynamic.rollUpLeft,
+.dynamic.rollUpRight,
+.dynamic.rollDownUp,
+.dynamic.rollDownLeft,
+.dynamic.rollDownRight {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-*/
+}
+
+.dynamic.windyX,
+.dynamic.windyY {
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+}
+
+.dynamic.hopIn,
+.dynamic.hopInLeft,
+.dynamic.hopInRight,
+.dynamic.hopOut,
+.dynamic.hopOutLeft,
+.dynamic.hopOutRight {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.dynamic.roundSlideRight,
+.dynamic.roundSlideLeft {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.starWars {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}
 
 @-webkit-keyframes rollDownUp {
   from {
@@ -47,7 +103,7 @@
   }
 
   to {
-    transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);    
+    transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
     opacity: 1;
   }
 }
@@ -175,11 +231,6 @@
   animation-name: rollDownRight;
 }
 
-/*
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-*/
-
 @-webkit-keyframes rollInLeft {
   from {
     -webkit-transform: translateX(-200%) rotate(-180deg);
@@ -242,11 +293,6 @@
   animation-name: rollInRight;
 }
 
-/*
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-*/
-
 @-webkit-keyframes rollOutRight {
   from {
     -webkit-transform: translate3d(0, 0, 0) rotate(-360deg);
@@ -308,11 +354,6 @@
   -webkit-animation-name: rollOutLeft;
   animation-name: rollOutLeft;
 }
-
-/*
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-*/
 
 @-webkit-keyframes rollUpDown {
   from {
@@ -429,11 +470,6 @@
   animation-name: rollUpRight;
 }
 
-/*
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-*/
-
 @-webkit-keyframes spinXUp {
   from {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -360deg);
@@ -540,11 +576,6 @@
   animation-name: spinXDown;
 }
 
-/*
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-*/
-
 @-webkit-keyframes spinYRight {
   from {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
@@ -650,11 +681,6 @@
   -webkit-animation-name: spinYLeft;
   animation-name: spinYLeft;
 }
-
-/*
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-*/
 
 @-webkit-keyframes spinZIn {
   from {
@@ -765,11 +791,6 @@
   -webkit-animation-name: spinZOut;
   animation-name: spinZOut;
 }
-
-/*
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-*/
 
 @-webkit-keyframes comeInUp {
   from {
@@ -951,11 +972,6 @@
   animation-name: comeInRight;
 }
 
-/*
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-*/
-
 @-webkit-keyframes fallDownUp {
   from {
     -webkit-transform: translateY(-200%) perspective(600px);
@@ -992,11 +1008,6 @@
   -webkit-animation-name: fallDownUp;
   animation-name: fallDownUp;
 }
-
-/*
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-*/
 
 @-webkit-keyframes fallDownDown {
   from {
@@ -1066,16 +1077,16 @@
   }
 
   40% {
-    -webkit-transform: translate(-50%, 0) rotateZ(-45deg);
+    -webkit-transform: translate(-50%, -30%) rotateZ(-45deg);
     opacity: 1;
   }
 
   80% {
-    -webkit-transform: translate(-34%, 10%) rotateZ(-30deg);
+    -webkit-transform: translate(-34%, -20%) rotateZ(-30deg);
   }
 
   to {
-    -webkit-transform: translate(0%, 30%) rotateZ(0deg);
+    -webkit-transform: translate(0%, 0) rotateZ(0deg);
   }
 }
 
@@ -1086,16 +1097,16 @@
   }
 
   40% {
-    transform: translate(-50%, 0) rotateZ(-45deg);
+    transform: translate(-50%, -30%) rotateZ(-45deg);
     opacity: 1;
   }
 
   80% {
-    transform: translate(-34%, 10%) rotateZ(-30deg);
+    transform: translate(-34%, -20%) rotateZ(-30deg);
   }
 
   to {
-    transform: translate(0%, 30%) rotateZ(0deg);
+    transform: translate(0%, 0) rotateZ(0deg);
   }
 }
 
@@ -1113,16 +1124,16 @@
   }
 
   40% {
-    -webkit-transform: translate(50%, 0) rotateZ(45deg);
+    -webkit-transform: translate(50%, -30%) rotateZ(45deg);
     opacity: 1;
   }
 
   80% {
-    -webkit-transform: translate(34%, 10%) rotateZ(30deg);
+    -webkit-transform: translate(34%, -20%) rotateZ(30deg);
   }
 
   to {
-    -webkit-transform: translate(0%, 30%) rotateZ(0deg);
+    -webkit-transform: translate(0%, 0) rotateZ(0deg);
   }
 }
 
@@ -1133,16 +1144,16 @@
   }
 
   40% {
-    transform: translate(50%, 0) rotateZ(45deg);
+    transform: translate(50%, -30%) rotateZ(45deg);
     opacity: 1;
   }
 
   80% {
-    transform: translate(34%, 10%) rotateZ(30deg);
+    transform: translate(34%, -20%) rotateZ(30deg);
   }
 
   to {
-    transform: translate(0%, 30%) rotateZ(0deg);
+    transform: translate(0%, 0) rotateZ(0deg);
   }
 }
 
@@ -1152,11 +1163,6 @@
   -webkit-animation-name: fallDownLeft;
   animation-name: fallDownLeft;
 }
-
-/*
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-*/
 
 @-webkit-keyframes hopIn {
   from {
@@ -1517,11 +1523,6 @@
   animation-name: hopInRight;
 }
 
-/*
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-*/
-
 @-webkit-keyframes speedInRight {
   from {
     -webkit-transform: translateX(-200%) skewX(-30deg);
@@ -1631,11 +1632,6 @@
   -webkit-animation-name: speedInLeft;
   animation-name: speedInLeft;
 }
-
-/*
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-*/
 
 @-webkit-keyframes stairsIn {
   from, 25%, 49%, 76%, 99% {
@@ -1842,11 +1838,6 @@
   animation-name: stairsInRight;
 }
 
-/*
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
-*/
-
 @-webkit-keyframes starWars {
   from {
     -webkit-transform: perspective(200px) translate3d(0, 150%, 100px) rotateX(45deg);
@@ -1898,12 +1889,7 @@
   animation-name: starWars;
 }
 
-/*
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-*/
-
-@-webkit-keyframes starWarsInFrontDown {
+@-webkit-keyframes starWarsFrontDown {
   from {
     -webkit-transform: perspective(200px) translate3d(0, 150%, 100px) rotateX(45deg);
     opacity: 0;
@@ -1922,7 +1908,7 @@
   }
 }
 
-@keyframes starWarsInFrontDown {
+@keyframes starWarsFrontDown {
   from {
     transform: perspective(200px) translate3d(0, 150%, 100px) rotateX(45deg);
     opacity: 0;
@@ -1941,14 +1927,14 @@
   }
 }
 
-.starWarsInFrontDown {
+.starWarsFrontDown {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: starWarsInFrontDown;
-  animation-name: starWarsInFrontDown;
+  -webkit-animation-name: starWarsFrontDown;
+  animation-name: starWarsFrontDown;
 }
 
-@-webkit-keyframes starWarsInBackDown {
+@-webkit-keyframes starWarsBackDown {
   from {
     -webkit-transform: perspective(800px) translate3d(0, -150%, 100px) scale3d(.5, .5, .5) rotateX(45deg);
     opacity: 0;
@@ -1967,7 +1953,7 @@
   }
 }
 
-@keyframes starWarsInBackDown {
+@keyframes starWarsBackDown {
   from {
     transform: perspective(800px) translate3d(0, -150%, 100px) scale3d(.5, .5, .5) rotateX(45deg);
     opacity: 0;
@@ -1986,14 +1972,14 @@
   }
 }
 
-.starWarsInBackDown {
+.starWarsBackDown {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: starWarsInBackDown;
-  animation-name: starWarsInBackDown;
+  -webkit-animation-name: starWarsBackDown;
+  animation-name: starWarsBackDown;
 }
 
-@-webkit-keyframes starWarsInFrontUp {
+@-webkit-keyframes starWarsFrontUp {
   from {
     -webkit-transform: perspective(200px) translate3d(0, -150%, 100px) rotateX(-45deg);
     opacity: 0;
@@ -2012,7 +1998,7 @@
   }
 }
 
-@keyframes starWarsInFrontUp {
+@keyframes starWarsFrontUp {
   from {
     transform: perspective(200px) translate3d(0, -150%, 100px) rotateX(-45deg);
     opacity: 0;
@@ -2031,14 +2017,14 @@
   }
 }
 
-.starWarsInFrontUp {
+.starWarsFrontUp {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: starWarsInFrontUp;
-  animation-name: starWarsInFrontUp;
+  -webkit-animation-name: starWarsFrontUp;
+  animation-name: starWarsFrontUp;
 }
 
-@-webkit-keyframes starWarsInBackUp {
+@-webkit-keyframes starWarsBackUp {
   from {
     -webkit-transform: perspective(800px) translate3d(0, 150%, 100px) scale3d(.5, .5, .5) rotateX(-45deg);
     opacity: 0;
@@ -2057,7 +2043,7 @@
   }
 }
 
-@keyframes starWarsInBackUp {
+@keyframes starWarsBackUp {
   from {
     transform: perspective(800px) translate3d(0, 150%, 100px) scale3d(.5, .5, .5) rotateX(-45deg);
     opacity: 0;
@@ -2076,17 +2062,12 @@
   }
 }
 
-.starWarsInBackUp {
+.starWarsBackUp {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-name: starWarsInBackUp;
-  animation-name: starWarsInBackUp;
+  -webkit-animation-name: starWarsBackUp;
+  animation-name: starWarsBackUp;
 }
-
-/*
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-*/
 
 @-webkit-keyframes comeOutUp {
   25% {
@@ -2227,11 +2208,6 @@
   -webkit-animation-name: comeOutRight;
   animation-name: comeOutRight;
 }
-
-/*
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-*/
 
 @-webkit-keyframes hopOut {
   from, 20%, 50%, 80% {
@@ -2560,11 +2536,6 @@
   animation-name: hopOutRight;
 }
 
-/*
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-*/
-
 @-webkit-keyframes roundOutRight {
   from {
     -webkit-transform-origin: 0 0;
@@ -2711,11 +2682,6 @@
   animation-name: roundOutLeft;
 }
 
-/*
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-*/
-
 @-webkit-keyframes speedOutRight {
   22% {
     -webkit-transform: translateX(20%) skewX(-15deg);
@@ -2777,11 +2743,6 @@
   -webkit-animation-name: speedOutLeft;
   animation-name: speedOutLeft;
 }
-
-/*
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-*/
 
 @-webkit-keyframes stairsOut {
   from, 25%, 49%, 76%, 99% {
@@ -2988,11 +2949,6 @@
   animation-name: stairsOutRight;
 }
 
-/*
-  -webkit-animation-duration: 1.2s;
-  animation-duration: 1.2s;
- */
-
 @-webkit-keyframes windyX {
   from {
     -webkit-transform-origin: 50% 0;
@@ -3144,11 +3100,6 @@
   -webkit-animation-name: windyY;
   animation-name: windyY;
 }
-
-/* 
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
- */
 
 @-webkit-keyframes roundSlideRight {
   from {
