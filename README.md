@@ -1,4 +1,4 @@
-# Dynamic.css
+# ![alt text](https://raw.githubusercontent.com/UstymUkhman/ustymukhman.github.io/master/Dynamic.css/img/favicon.png "Dynamic.css")Dynamic.css
 *Awesome Library of CSS3 animations*
 
 Special thanks to daneden's [Animate.css](https://github.com/daneden/animate.css) and Christian's [magic](https://github.com/miniMAC/magic) for inspiration.<br>
