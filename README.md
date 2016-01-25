@@ -1,4 +1,4 @@
-# Dynamic.css
+# ![alt text](https://raw.githubusercontent.com/UstymUkhman/ustymukhman.github.io/master/Dynamic.css/img/favicon.png "Dynamic.css")Dynamic.css
 *Awesome Library of CSS3 animations*
 
 Special thanks to daneden's [Animate.css](https://github.com/daneden/animate.css) and Christian's [magic](https://github.com/miniMAC/magic) for inspiration.<br>
@@ -34,16 +34,12 @@ It's perfect to animate incoming and leaving web page elements, but it also coul
   * `spinYLeft`
   * `spinYRight`
   * `spinZIn`
-  * `spinZOut`
-<br><br>
-
+  * `spinZOut`<br><br>
   * `starWars`
   * `starWarsFrontUp`
   * `starWarsFrontDown`
   * `starWarsBackUp`
-  * `starWarsBackDown`
-<br><br>
-
+  * `starWarsBackDown`<br><br>
   * `comeInLeft`
   * `comeInUp`
   * `comeInDown`
@@ -51,56 +47,41 @@ It's perfect to animate incoming and leaving web page elements, but it also coul
   * `comeOutLeft`
   * `comeOutUp`
   * `comeOutDown`
-  * `comeOutRight`
-<br><br>
-
+  * `comeOutRight`<br><br>
   * `speedInLeft`
   * `speedInRight`
   * `speedOutLeft`
-  * `speedOutRight`
-<br><br>
-
+  * `speedOutRight`<br><br>
   * `stairsInLeft`
   * `stairsIn`
   * `stairsInRight`
   * `stairsOutLeft`
   * `stairsOut`
-  * `stairsOutRight`
-<br><br>
-
+  * `stairsOutRight`<br><br>
   * `hopInLeft`
   * `hopIn`
   * `hopInRight`
   * `hopOutLeft`
   * `hopOut`
-  * `hopOutRight`
-<br><br>
-
+  * `hopOutRight`<br><br>
   * `rollInLeft`
   * `rollInRight`
   * `rollOutLeft`
-  * `rollOutRight`
-<br><br>
-
+  * `rollOutRight`<br><br>
   * `rollUpLeft`
   * `rollUpDown`
   * `rollUpRight`
   * `rollDownLeft`
   * `rollDownUp`
-  * `rollDownRight`
-<br><br>
-
+  * `rollDownRight`<br><br>
   * `fallDownLeft`
   * `fallDownUp`
   * `fallDownDown`
-  * `fallDownRight`
-<br><br>
-
+  * `fallDownRight`<br><br>
   * `roundOutLeft`
   * `roundOutRight`
   * `roundSlideLeft`
-  * `roundSlideRight`
-<br><br>
+  * `roundSlideRight`<br><br>
 
 ## License
 Animate.css is licensed under the [MIT license](http://opensource.org/licenses/MIT).
