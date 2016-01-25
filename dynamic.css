@@ -6,7 +6,7 @@
  * @author Ustym Ukhman <ustym.ukhman@gmail.com>
  * @license MIT License, http://opensource.org/licenses/MIT
  *
- * Date: 23-01-2016 3:12:36 PM GMT+0100
+ * Date: 25-01-2016 10:42:31 PM GMT+0100
  */
 
 @charset "UTF-8";
@@ -31,6 +31,7 @@
   animation-duration: .5s;
 }
 
+.dynamic.jump,
 .dynamic.spinXUp,
 .dynamic.spinXDown,
 .dynamic.spinYRight,
@@ -79,7 +80,8 @@
   animation-duration: 3s;
 }
 
-.starWars {
+.dynamic.blink,
+.dynamic.starWars {
   -webkit-animation-duration: 10s;
   animation-duration: 10s;
 }
@@ -2745,83 +2747,91 @@
 }
 
 @-webkit-keyframes stairsOut {
-  from, 25%, 49%, 76%, 99% {
-    -webkit-transform-origin: 50% 0%;
-  }
-
-  50%, 75%, to {
+  from, 25%, 50%, 76%, 99%, to {
     -webkit-transform-origin: 50% 100%;
   }
 
+  51%, 75% {
+    -webkit-transform-origin: 50% 0%;
+  }
+
   from {
-    -webkit-transform: translateY(100%) perspective(400px) scale3d(1, 1, 1) rotateX(540deg);
+    -webkit-transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
   }
 
   25% {
-    -webkit-transform: translateY(100%) perspective(400px) scale3d(1, 1, 1) rotateX(540deg);
+    -webkit-transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
     opacity: 1;
   }
 
   50% {
-    -webkit-transform: translateY(120%) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(360deg);
+    -webkit-transform: translateY(0) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
+  }
+
+  51% {
+    -webkit-transform: translateY(220%) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
   }
 
   75% {
-    -webkit-transform: translateY(140%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(180deg);
+    -webkit-transform: translateY(220%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
   }
 
   76% {
-    -webkit-transform: translateY(340%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(180deg);
+    -webkit-transform: translateY(260%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
   }
 
   99% {
-    -webkit-transform: translateY(355%) perspective(400px) scale3d(1.55, 1.55, 1.55) rotateX(7deg);
+    -webkit-transform: translateY(280%) perspective(400px) scale3d(1.55, 1.55, 1.55) rotateX(187deg);
     opacity: .1;
   }
 
   to {
-    -webkit-transform: translateY(360%) perspective(400px) scale3d(1.6, 1.6, 1.6) rotateX(0deg);
+    -webkit-transform: translateY(280%) perspective(400px) scale3d(1.6, 1.6, 1.6) rotateX(180deg);
     opacity: 0;
   }
 }
 
 @keyframes stairsOut {
-  from, 25%, 49%, 76%, 99% {
-    transform-origin: 50% 0%;
-  }
-
-  50%, 75%, to {
+  from, 25%, 50%, 76%, 99%, to {
     transform-origin: 50% 100%;
   }
 
+  51%, 75% {
+    transform-origin: 50% 0%;
+  }
+
   from {
-    transform: translateY(100%) perspective(400px) scale3d(1, 1, 1) rotateX(540deg);
+    transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
   }
 
   25% {
-    transform: translateY(100%) perspective(400px) scale3d(1, 1, 1) rotateX(540deg);
+    transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
     opacity: 1;
   }
 
   50% {
-    transform: translateY(120%) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(360deg);
+    transform: translateY(0) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
+  }
+
+  51% {
+    transform: translateY(220%) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
   }
 
   75% {
-    transform: translateY(140%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(180deg);
+    transform: translateY(220%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
   }
 
   76% {
-    transform: translateY(340%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(180deg);
+    transform: translateY(260%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
   }
 
   99% {
-    transform: translateY(355%) perspective(400px) scale3d(1.55, 1.55, 1.55) rotateX(7deg);
+    transform: translateY(280%) perspective(400px) scale3d(1.55, 1.55, 1.55) rotateX(187deg);
     opacity: .1;
   }
 
   to {
-    transform: translateY(360%) perspective(400px) scale3d(1.6, 1.6, 1.6) rotateX(0deg);
+    transform: translateY(280%) perspective(400px) scale3d(1.6, 1.6, 1.6) rotateX(180deg);
     opacity: 0;
   }
 }
@@ -2949,6 +2959,140 @@
   animation-name: stairsOutRight;
 }
 
+@-webkit-keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: .25;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  35% {
+    opacity: .5;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: .75;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: .25;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  35% {
+    opacity: .5;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: .75;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.blink {
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-name: blink;
+  animation-name: blink;
+}
+
+@-webkit-keyframes jump {
+  from, 10% {
+    -webkit-transform: translateY(0) scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: translateY(10%) scale3d(1.05, .8, 1);
+  }
+
+  50% {
+    -webkit-transform: translateY(-50%) scale3d(1, 1.1, 1);
+  }
+
+  65% {
+    -webkit-transform: translateY(0) scale3d(1, 1, 1);
+  }
+
+  75% {
+    -webkit-transform: translateY(8%) scale3d(1.08, .84, 1);
+  }
+
+  85% {
+    -webkit-transform: translateY(6%) scale3d(1.05, .88, 1);
+  }
+
+  90%, to {
+    -webkit-transform: none;
+  }
+}
+
+@keyframes jump {
+  from, 10% {
+    transform: translateY(0) scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: translateY(10%) scale3d(1.05, .8, 1);
+  }
+
+  50% {
+    transform: translateY(-50%) scale3d(1, 1.1, 1);
+  }
+
+  65% {
+    transform: translateY(0) scale3d(1, 1, 1);
+  }
+
+  75% {
+    transform: translateY(8%) scale3d(1.08, .84, 1);
+  }
+
+  85% {
+    transform: translateY(6%) scale3d(1.05, .88, 1);
+  }
+
+  90%, to {
+    transform: none;
+  }
+}
+
+.jump {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: jump;
+  animation-name: jump;
+}
+
 @-webkit-keyframes windyX {
   from {
     -webkit-transform-origin: 50% 0;
@@ -2976,7 +3120,7 @@
   }
 
   to {
-    -webkit-transform-origin: 0 0;
+    -webkit-transform-origin: 50% 0;
     -webkit-transform: rotate(0deg);
   }
 }
@@ -3008,7 +3152,7 @@
   }
 
   to {
-    transform-origin: 0 0;
+    transform-origin: 50% 0;
     transform: rotate(0deg);
   }
 }
@@ -3052,7 +3196,7 @@
   }
 
   to {
-    -webkit-transform-origin: 0% 0%;
+    -webkit-transform-origin: 50% 0%;
     -webkit-transform: perspective(800px) rotateX(0deg);
   }
 }
@@ -3089,7 +3233,7 @@
   }
 
   to {
-    transform-origin: 0% 0%;
+    transform-origin: 50% 0%;
     transform: perspective(800px) rotateX(0deg);
   }
 }
