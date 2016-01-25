@@ -25,6 +25,8 @@ It's perfect to animate incoming and leaving web page elements, but it also coul
 
 3. Than you'll also have to add one of the following classes:
 
+  * `jump`
+  * `blink`
   * `windyX`
   * `windyY`
   * `spinXUp`

@@ -1,0 +1,66 @@
+@-webkit-keyframes jump {
+  from, 10% {
+    -webkit-transform: translateY(0) scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: translateY(10%) scale3d(1.05, .8, 1);
+  }
+
+  50% {
+    -webkit-transform: translateY(-50%) scale3d(1, 1.1, 1);
+  }
+
+  65% {
+    -webkit-transform: translateY(0) scale3d(1, 1, 1);
+  }
+
+  75% {
+    -webkit-transform: translateY(8%) scale3d(1.08, .84, 1);
+  }
+
+  85% {
+    -webkit-transform: translateY(6%) scale3d(1.05, .88, 1);
+  }
+
+  90%, to {
+    -webkit-transform: none;
+  }
+}
+
+@keyframes jump {
+  from, 10% {
+    transform: translateY(0) scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: translateY(10%) scale3d(1.05, .8, 1);
+  }
+
+  50% {
+    transform: translateY(-50%) scale3d(1, 1.1, 1);
+  }
+
+  65% {
+    transform: translateY(0) scale3d(1, 1, 1);
+  }
+
+  75% {
+    transform: translateY(8%) scale3d(1.08, .84, 1);
+  }
+
+  85% {
+    transform: translateY(6%) scale3d(1.05, .88, 1);
+  }
+
+  90%, to {
+    transform: none;
+  }
+}
+
+.jump {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: jump;
+  animation-name: jump;
+}

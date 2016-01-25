@@ -20,6 +20,7 @@
   animation-duration: .5s;
 }
 
+.dynamic.jump,
 .dynamic.spinXUp,
 .dynamic.spinXDown,
 .dynamic.spinYRight,
@@ -68,7 +69,8 @@
   animation-duration: 3s;
 }
 
-.starWars {
+.dynamic.blink,
+.dynamic.starWars {
   -webkit-animation-duration: 10s;
   animation-duration: 10s;
 }

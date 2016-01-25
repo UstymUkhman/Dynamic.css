@@ -25,7 +25,7 @@
   }
 
   to {
-    -webkit-transform-origin: 0 0;
+    -webkit-transform-origin: 50% 0;
     -webkit-transform: rotate(0deg);
   }
 }
@@ -57,7 +57,7 @@
   }
 
   to {
-    transform-origin: 0 0;
+    transform-origin: 50% 0;
     transform: rotate(0deg);
   }
 }
@@ -101,7 +101,7 @@
   }
 
   to {
-    -webkit-transform-origin: 0% 0%;
+    -webkit-transform-origin: 50% 0%;
     -webkit-transform: perspective(800px) rotateX(0deg);
   }
 }
@@ -138,7 +138,7 @@
   }
 
   to {
-    transform-origin: 0% 0%;
+    transform-origin: 50% 0%;
     transform: perspective(800px) rotateX(0deg);
   }
 }

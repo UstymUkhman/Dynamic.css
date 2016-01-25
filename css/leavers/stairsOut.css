@@ -1,81 +1,89 @@
 @-webkit-keyframes stairsOut {
-  from, 25%, 49%, 76%, 99% {
-    -webkit-transform-origin: 50% 0%;
-  }
-
-  50%, 75%, to {
+  from, 25%, 50%, 76%, 99%, to {
     -webkit-transform-origin: 50% 100%;
   }
 
+  51%, 75% {
+    -webkit-transform-origin: 50% 0%;
+  }
+
   from {
-    -webkit-transform: translateY(100%) perspective(400px) scale3d(1, 1, 1) rotateX(540deg);
+    -webkit-transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
   }
 
   25% {
-    -webkit-transform: translateY(100%) perspective(400px) scale3d(1, 1, 1) rotateX(540deg);
+    -webkit-transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
     opacity: 1;
   }
 
   50% {
-    -webkit-transform: translateY(120%) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(360deg);
+    -webkit-transform: translateY(0) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
+  }
+
+  51% {
+    -webkit-transform: translateY(220%) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
   }
 
   75% {
-    -webkit-transform: translateY(140%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(180deg);
+    -webkit-transform: translateY(220%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
   }
 
   76% {
-    -webkit-transform: translateY(340%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(180deg);
+    -webkit-transform: translateY(260%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
   }
 
   99% {
-    -webkit-transform: translateY(355%) perspective(400px) scale3d(1.55, 1.55, 1.55) rotateX(7deg);
+    -webkit-transform: translateY(280%) perspective(400px) scale3d(1.55, 1.55, 1.55) rotateX(187deg);
     opacity: .1;
   }
 
   to {
-    -webkit-transform: translateY(360%) perspective(400px) scale3d(1.6, 1.6, 1.6) rotateX(0deg);
+    -webkit-transform: translateY(280%) perspective(400px) scale3d(1.6, 1.6, 1.6) rotateX(180deg);
     opacity: 0;
   }
 }
 
 @keyframes stairsOut {
-  from, 25%, 49%, 76%, 99% {
-    transform-origin: 50% 0%;
-  }
-
-  50%, 75%, to {
+  from, 25%, 50%, 76%, 99%, to {
     transform-origin: 50% 100%;
   }
 
+  51%, 75% {
+    transform-origin: 50% 0%;
+  }
+
   from {
-    transform: translateY(100%) perspective(400px) scale3d(1, 1, 1) rotateX(540deg);
+    transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
   }
 
   25% {
-    transform: translateY(100%) perspective(400px) scale3d(1, 1, 1) rotateX(540deg);
+    transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
     opacity: 1;
   }
 
   50% {
-    transform: translateY(120%) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(360deg);
+    transform: translateY(0) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
+  }
+
+  51% {
+    transform: translateY(220%) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
   }
 
   75% {
-    transform: translateY(140%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(180deg);
+    transform: translateY(220%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
   }
 
   76% {
-    transform: translateY(340%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(180deg);
+    transform: translateY(260%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
   }
 
   99% {
-    transform: translateY(355%) perspective(400px) scale3d(1.55, 1.55, 1.55) rotateX(7deg);
+    transform: translateY(280%) perspective(400px) scale3d(1.55, 1.55, 1.55) rotateX(187deg);
     opacity: .1;
   }
 
   to {
-    transform: translateY(360%) perspective(400px) scale3d(1.6, 1.6, 1.6) rotateX(0deg);
+    transform: translateY(280%) perspective(400px) scale3d(1.6, 1.6, 1.6) rotateX(180deg);
     opacity: 0;
   }
 }
