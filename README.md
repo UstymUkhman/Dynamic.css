@@ -34,7 +34,9 @@ It's perfect to animate incoming and leaving web page elements, but it also coul
   * `spinYLeft`
   * `spinYRight`
   * `spinZIn`
-  * `spinZOut`<br><br>
+  * `spinZOut`
+  * `materialize`
+  * `vaporize`<br><br>
   * `starWars`
   * `starWarsFrontUp`
   * `starWarsFrontDown`
