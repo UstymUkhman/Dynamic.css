@@ -63,6 +63,8 @@
   animation-duration: 1.5s;
 }
 
+.dynamic.vaporize,
+.dynamic.materialize,
 .dynamic.roundSlideRight,
 .dynamic.roundSlideLeft {
   -webkit-animation-duration: 3s;

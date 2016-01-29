@@ -1,0 +1,69 @@
+@-webkit-keyframes materialize {
+  from {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: scale3d(5, 5, 5);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes materialize {
+  from {
+    transform-origin: 50% 50%;
+    transform: scale3d(5, 5, 5);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: 50% 50%;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.materialize {
+  -webkit-animation-timing-function: cubic-bezier(.5, .25, .9, .25);
+  animation-timing-function: cubic-bezier(.5, .25, .9, .25);
+  -webkit-animation-name: materialize;
+  animation-name: materialize;
+}
+
+@-webkit-keyframes vaporize {
+  from {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: scale3d(5, 5, 5);
+    opacity: 0;
+  }
+}
+
+@keyframes vaporize {
+  from {
+    transform-origin: 50% 50%;
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: 50% 50%;
+    transform: scale3d(5, 5, 5);
+    opacity: 0;
+  }
+}
+
+.vaporize {
+  -webkit-animation-timing-function: cubic-bezier(.5, .25, .9, .25);
+  animation-timing-function: cubic-bezier(.5, .25, .9, .25);
+  -webkit-animation-name: vaporize;
+  animation-name: vaporize;
+}

@@ -23,12 +23,12 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'css/main.css',
-          'css/rollers/*.css',
+          'css/specials/*.css',
           'css/spinners/*.css',
           'css/incomers/*.css',
           'css/leavers/*.css',
-          'css/blinkers/*.css',
-          'css/sliders/*.css'
+          'css/rollers/*.css',
+          'css/turners/*.css'
         ],
         dest: '<%= pkg.filename %>.css'
       }

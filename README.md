@@ -84,4 +84,4 @@ It's perfect to animate incoming and leaving web page elements, but it also coul
   * `roundSlideRight`<br><br>
 
 ## License
-Animate.css is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Dynamic.css is licensed under the [MIT license](http://opensource.org/licenses/MIT).
