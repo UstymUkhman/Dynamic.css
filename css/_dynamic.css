@@ -32,7 +32,8 @@
   animation-duration: .75s;
 }
 
-.dynamic.fallDownDown,
+.dynamic.fallDownIn,
+.dynamic.fallDownOut,
 .dynamic.fallDownLeft,
 .dynamic.fallDownRight,
 .dynamic.rollOutLeft,

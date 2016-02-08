@@ -76,9 +76,10 @@ It's perfect to animate incoming and leaving web page elements, but it also coul
   * `rollDownLeft`
   * `rollDownUp`
   * `rollDownRight`<br><br>
+  * `fallDownIn`
+  * `fallDownOut`
   * `fallDownLeft`
   * `fallDownUp`
-  * `fallDownDown`
   * `fallDownRight`<br><br>
   * `roundOutLeft`
   * `roundOutRight`
