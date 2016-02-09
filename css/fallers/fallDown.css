@@ -177,7 +177,7 @@
   animation-name: fallDownOut;
 }
 
-@-webkit-keyframes fallDownRight {
+@-webkit-keyframes fallDownLeft {
   from {
     -webkit-transform: translate(-50%, -200%) rotateZ(-45deg);
     opacity: 0;
@@ -197,7 +197,7 @@
   }
 }
 
-@keyframes fallDownRight {
+@keyframes fallDownLeft {
   from {
     transform: translate(-50%, -200%) rotateZ(-45deg);
     opacity: 0;
@@ -217,14 +217,14 @@
   }
 }
 
-.fallDownRight {
+.fallDownLeft {
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
-  -webkit-animation-name: fallDownRight;
-  animation-name: fallDownRight;
+  -webkit-animation-name: fallDownLeft;
+  animation-name: fallDownLeft;
 }
 
-@-webkit-keyframes fallDownLeft {
+@-webkit-keyframes fallDownRight {
   from {
     -webkit-transform: translate(50%, -200%) rotateZ(45deg);
     opacity: 0;
@@ -244,7 +244,7 @@
   }
 }
 
-@keyframes fallDownLeft {
+@keyframes fallDownRight {
   from {
     transform: translate(50%, -200%) rotateZ(45deg);
     opacity: 0;
@@ -264,9 +264,9 @@
   }
 }
 
-.fallDownLeft {
+.fallDownRight {
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
-  -webkit-animation-name: fallDownLeft;
-  animation-name: fallDownLeft;
+  -webkit-animation-name: fallDownRight;
+  animation-name: fallDownRight;
 }
