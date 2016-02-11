@@ -2,9 +2,9 @@
 *Awesome Library of CSS3 animations*
 
 [![Dynamic.css build](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)](https://github.com/UstymUkhman/Dynamic.css/blob/master/dynamic.css)
-[![Dynamic.css release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/UstymUkhman/Dynamic.css/)
-[![Bower version](https://img.shields.io/bower/l/bootstrap.svg)]()
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
+[![Dynamic.css release](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)](https://github.com/UstymUkhman/Dynamic.css/)
+[![Bower version](https://img.shields.io/badge/bower-v1.0.0-blue.svg)]()
+[![GitHub license](https://img.shields.io/cocoapods/l/AFNetworking.svg)](https://opensource.org/licenses/MIT)
 
 **Special thanks to daneden's [Animate.css](https://github.com/daneden/animate.css) and Christian's [magic](https://github.com/miniMAC/magic) for inspiration.<br>
 You're amazing, guys!** :+1:
