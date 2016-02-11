@@ -1,8 +1,13 @@
 # Dynamic.css
 *Awesome Library of CSS3 animations*
 
-Special thanks to daneden's [Animate.css](https://github.com/daneden/animate.css) and Christian's [magic](https://github.com/miniMAC/magic) for inspiration.<br>
-You're amazing guys! :+1:
+[![Dynamic.css build](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)](https://github.com/UstymUkhman/Dynamic.css/blob/master/dynamic.css)
+[![Dynamic.css release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/UstymUkhman/Dynamic.css/)
+[![Bower version](https://img.shields.io/bower/l/bootstrap.svg)]()
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
+
+**Special thanks to daneden's [Animate.css](https://github.com/daneden/animate.css) and Christian's [magic](https://github.com/miniMAC/magic) for inspiration.<br>
+You're amazing, guys!** :+1:
 
 **Dynamic.css** is a bunch of awesome, cross-browser CSS animations to use in any project.<br>
 It's perfect to animate incoming and leaving web page elements, but it also could be useful for sliders, `:hover` handlers and all kind of general use.
@@ -27,6 +32,8 @@ It's perfect to animate incoming and leaving web page elements, but it also coul
 
   * `jump`
   * `blink`
+  * `fitIn`
+  * `fitOut`
   * `windyX`
   * `windyY`
   * `spinXUp`
