@@ -1,3 +1,32 @@
+@keyframes fitIn {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transform-origin: 50% 50%;
+    transform: scale3d(5, 5, 5);
+  }
+
+  75% {
+    opacity: 1;
+    filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transform-origin: 50% 50%;
+    transform: scale3d(1.25, 1.25, 1.25);
+  }
+
+  to {
+    transform-origin: 50% 50%;
+    transform: none;
+  }
+}
+
 @-webkit-keyframes fitIn {
   from {
     opacity: 0;
@@ -19,32 +48,50 @@
   }
 }
 
-@keyframes fitIn {
-  from {
-    opacity: 0;
-    filter: blur(5px);
-    transform-origin: 50% 50%;
-    transform: scale3d(5, 5, 5);
-  }
-
-  75% {
-    opacity: 1;
-    filter: blur(0px);
-    transform-origin: 50% 50%;
-    transform: scale3d(1.25, 1.25, 1.25);
-  }
-
-  to {
-    transform-origin: 50% 50%;
-    transform: none;
-  }
-}
-
 .fitIn {
   -webkit-animation-timing-function: cubic-bezier(.25, 1, .75, 1);
   animation-timing-function: cubic-bezier(.25, 1, .75, 1);
   -webkit-animation-name: fitIn;
   animation-name: fitIn;
+}
+
+@keyframes fitOut {
+  from {
+    opacity: 1;
+    transform: none;
+    transform-origin: 50% 50%;
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transform-origin: 50% 50%;
+    transform: scale3d(.75, .75, .75);
+  }
+
+  75% {
+    opacity: .1;
+    filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -webkit-filter: blur(3px);
+  }
+
+  to {
+    opacity: 0;
+    filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transform-origin: 50% 50%;
+    transform: scale3d(3, 3, 3);
+  }
 }
 
 @-webkit-keyframes fitOut {
@@ -70,33 +117,6 @@
     -webkit-transform: scale3d(3, 3, 3);
     -webkit-transform-origin: 50% 50%;
     -webkit-filter: blur(5px);
-    opacity: 0;
-  }
-}
-
-@keyframes fitOut {
-  from {
-    opacity: 1;
-    transform: none;
-    transform-origin: 50% 50%;
-  }
-
-  50% {
-    opacity: 1;
-    filter: blur(0px);
-    transform-origin: 50% 50%;
-    transform: scale3d(.75, .75, .75);
-  }
-
-  75% {
-    opacity: .1;
-    filter: blur(3px);
-  }
-
-  to {
-    transform: scale3d(3, 3, 3);
-    transform-origin: 50% 50%;
-    filter: blur(5px);
     opacity: 0;
   }
 }

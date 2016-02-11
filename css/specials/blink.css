@@ -1,4 +1,4 @@
-@-webkit-keyframes blink {
+@keyframes blink {
   from {
     opacity: 0;
   }
@@ -28,7 +28,7 @@
   }
 }
 
-@keyframes blink {
+@-webkit-keyframes blink {
   from {
     opacity: 0;
   }

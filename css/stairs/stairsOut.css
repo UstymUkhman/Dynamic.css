@@ -1,48 +1,3 @@
-@-webkit-keyframes stairsOut {
-  from, 25%, 50%, 76%, 99%, to {
-    -webkit-transform-origin: 50% 100%;
-  }
-
-  51%, 75% {
-    -webkit-transform-origin: 50% 0%;
-  }
-
-  from {
-    -webkit-transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
-  }
-
-  25% {
-    -webkit-transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
-    opacity: 1;
-  }
-
-  50% {
-    -webkit-transform: translateY(0) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
-  }
-
-  51% {
-    -webkit-transform: translateY(220%) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
-  }
-
-  75% {
-    -webkit-transform: translateY(220%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
-  }
-
-  76% {
-    -webkit-transform: translateY(260%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
-  }
-
-  99% {
-    -webkit-transform: translateY(280%) perspective(400px) scale3d(1.55, 1.55, 1.55) rotateX(187deg);
-    opacity: .1;
-  }
-
-  to {
-    -webkit-transform: translateY(280%) perspective(400px) scale3d(1.6, 1.6, 1.6) rotateX(180deg);
-    opacity: 0;
-  }
-}
-
 @keyframes stairsOut {
   from, 25%, 50%, 76%, 99%, to {
     transform-origin: 50% 100%;
@@ -88,6 +43,51 @@
   }
 }
 
+@-webkit-keyframes stairsOut {
+  from, 25%, 50%, 76%, 99%, to {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  51%, 75% {
+    -webkit-transform-origin: 50% 0%;
+  }
+
+  from {
+    -webkit-transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
+  }
+
+  25% {
+    -webkit-transform: translateY(0) perspective(400px) scale3d(1, 1, 1) rotateX(720deg);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateY(0) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
+  }
+
+  51% {
+    -webkit-transform: translateY(220%) perspective(400px) scale3d(1.2, 1.2, 1.2) rotateX(540deg);
+  }
+
+  75% {
+    -webkit-transform: translateY(220%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
+  }
+
+  76% {
+    -webkit-transform: translateY(260%) perspective(400px) scale3d(1.4, 1.4, 1.4) rotateX(360deg);
+  }
+
+  99% {
+    -webkit-transform: translateY(280%) perspective(400px) scale3d(1.55, 1.55, 1.55) rotateX(187deg);
+    opacity: .1;
+  }
+
+  to {
+    -webkit-transform: translateY(280%) perspective(400px) scale3d(1.6, 1.6, 1.6) rotateX(180deg);
+    opacity: 0;
+  }
+}
+
 .stairsOut {
   -webkit-animation-timing-function: cubic-bezier(.63, 0, 1, 1);
   animation-timing-function: cubic-bezier(.63, 0, 1, 1);
@@ -95,31 +95,6 @@
   backface-visibility: visible;
   -webkit-animation-name: stairsOut;
   animation-name: stairsOut;
-}
-
-@-webkit-keyframes stairsOutLeft {
-  from {
-    -webkit-transform: none;
-    opacity: 1;
-  }
-
-  25% {
-    -webkit-transform: translate3d(-100%, 100%, 0) rotate(-90deg);
-  }
-
-  50% {
-    -webkit-transform: translate3d(-200%, 200%, 0) rotate(-180deg);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-300%, 300%, 0) rotate(-270deg);
-    opacity: .1;
-  }
-
-  to {
-    -webkit-transform: translate3d(-300%, 300%, 0) rotate(-270deg);
-    opacity: 0;
-  }
 }
 
 @keyframes stairsOutLeft {
@@ -147,36 +122,36 @@
   }
 }
 
-.stairsOutLeft {
-  -webkit-animation-timing-function: cubic-bezier(.63, 0, 1, 1);
-  animation-timing-function: cubic-bezier(.63, 0, 1, 1);
-  -webkit-animation-name: stairsOutLeft;
-  animation-name: stairsOutLeft;
-}
-
-@-webkit-keyframes stairsOutRight {
+@-webkit-keyframes stairsOutLeft {
   from {
     -webkit-transform: none;
     opacity: 1;
   }
 
   25% {
-    -webkit-transform: translate3d(100%, 100%, 0) rotate(90deg);
+    -webkit-transform: translate3d(-100%, 100%, 0) rotate(-90deg);
   }
 
   50% {
-    -webkit-transform: translate3d(200%, 200%, 0) rotate(180deg);
+    -webkit-transform: translate3d(-200%, 200%, 0) rotate(-180deg);
   }
 
   75% {
-    -webkit-transform: translate3d(300%, 300%, 0) rotate(270deg);
+    -webkit-transform: translate3d(-300%, 300%, 0) rotate(-270deg);
     opacity: .1;
   }
 
   to {
-    -webkit-transform: translate3d(300%, 300%, 0) rotate(270deg);
+    -webkit-transform: translate3d(-300%, 300%, 0) rotate(-270deg);
     opacity: 0;
   }
+}
+
+.stairsOutLeft {
+  -webkit-animation-timing-function: cubic-bezier(.63, 0, 1, 1);
+  animation-timing-function: cubic-bezier(.63, 0, 1, 1);
+  -webkit-animation-name: stairsOutLeft;
+  animation-name: stairsOutLeft;
 }
 
 @keyframes stairsOutRight {
@@ -200,6 +175,31 @@
 
   to {
     transform: translate3d(300%, 300%, 0) rotate(270deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes stairsOutRight {
+  from {
+    -webkit-transform: none;
+    opacity: 1;
+  }
+
+  25% {
+    -webkit-transform: translate3d(100%, 100%, 0) rotate(90deg);
+  }
+
+  50% {
+    -webkit-transform: translate3d(200%, 200%, 0) rotate(180deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(300%, 300%, 0) rotate(270deg);
+    opacity: .1;
+  }
+
+  to {
+    -webkit-transform: translate3d(300%, 300%, 0) rotate(270deg);
     opacity: 0;
   }
 }

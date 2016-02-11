@@ -1,22 +1,3 @@
-@-webkit-keyframes comeInUp {
-  from {
-    -webkit-transform-origin: 50% 0%;
-    -webkit-transform: perspective(200px) translate3d(0, -200%, -100px) rotateX(-60deg);
-    opacity: 0;
-  }
-
-  85% {
-    -webkit-transform-origin: 50% 0%;
-    -webkit-transform: perspective(200px) rotateX(-45deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: 50% 0%;
-    -webkit-transform: perspective(200px);
-  }
-}
-
 @keyframes comeInUp {
   from {
     transform-origin: 50% 0%;
@@ -36,30 +17,30 @@
   }
 }
 
+@-webkit-keyframes comeInUp {
+  from {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(200px) translate3d(0, -200%, -100px) rotateX(-60deg);
+    opacity: 0;
+  }
+
+  85% {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(200px) rotateX(-45deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: perspective(200px);
+  }
+}
+
 .comeInUp {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-name: comeInUp;
   animation-name: comeInUp;
-}
-
-@-webkit-keyframes comeInDown {
-  from {
-    -webkit-transform-origin: 50% 100%;
-    -webkit-transform: perspective(200px) translate3d(0, 200%, -100px) rotateX(60deg);
-    opacity: 0;
-  }
-
-  85% {
-    -webkit-transform-origin: 50% 100%;
-    -webkit-transform: perspective(200px) rotateX(45deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: 50% 100%;
-    -webkit-transform: perspective(200px);
-  }
 }
 
 @keyframes comeInDown {
@@ -81,30 +62,30 @@
   }
 }
 
+@-webkit-keyframes comeInDown {
+  from {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(200px) translate3d(0, 200%, -100px) rotateX(60deg);
+    opacity: 0;
+  }
+
+  85% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(200px) rotateX(45deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(200px);
+  }
+}
+
 .comeInDown {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-name: comeInDown;
   animation-name: comeInDown;
-}
-
-@-webkit-keyframes comeInLeft {
-  from {
-    -webkit-transform-origin: 0 50%;
-    -webkit-transform: perspective(200px) translate3d(-200%, 0, -100px) scale3d(.5, .5, .5) rotateY(60deg);
-    opacity: 0;
-  }
-
-  85% {
-    -webkit-transform-origin: 0 50%;
-    -webkit-transform: perspective(200px) rotateY(45deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: 0 50%;
-    -webkit-transform: perspective(200px);
-  }
 }
 
 @keyframes comeInLeft {
@@ -126,30 +107,30 @@
   }
 }
 
+@-webkit-keyframes comeInLeft {
+  from {
+    -webkit-transform-origin: 0 50%;
+    -webkit-transform: perspective(200px) translate3d(-200%, 0, -100px) scale3d(.5, .5, .5) rotateY(60deg);
+    opacity: 0;
+  }
+
+  85% {
+    -webkit-transform-origin: 0 50%;
+    -webkit-transform: perspective(200px) rotateY(45deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 0 50%;
+    -webkit-transform: perspective(200px);
+  }
+}
+
 .comeInLeft {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-name: comeInLeft;
   animation-name: comeInLeft;
-}
-
-@-webkit-keyframes comeInRight {
-  from {
-    -webkit-transform-origin: 100% 50%;
-    -webkit-transform: perspective(200px) translate3d(200%, 0, -100px) scale3d(.5, .5, .5) rotateY(-60deg);
-    opacity: 0;
-  }
-
-  85% {
-    -webkit-transform-origin: 100% 50%;
-    -webkit-transform: perspective(200px) rotateY(-45deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: 100% 50%;
-    -webkit-transform: perspective(200px);
-  }
 }
 
 @keyframes comeInRight {
@@ -168,6 +149,25 @@
   to {
     transform-origin: 100% 50%;
     transform: perspective(200px);
+  }
+}
+
+@-webkit-keyframes comeInRight {
+  from {
+    -webkit-transform-origin: 100% 50%;
+    -webkit-transform: perspective(200px) translate3d(200%, 0, -100px) scale3d(.5, .5, .5) rotateY(-60deg);
+    opacity: 0;
+  }
+
+  85% {
+    -webkit-transform-origin: 100% 50%;
+    -webkit-transform: perspective(200px) rotateY(-45deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: 100% 50%;
+    -webkit-transform: perspective(200px);
   }
 }
 

@@ -1,27 +1,3 @@
-@-webkit-keyframes speedInRight {
-  from {
-    -webkit-transform: translateX(-200%) skewX(-30deg);
-    opacity: 0;
-  }
-
-  48% {
-    -webkit-transform: skewX(-30deg);
-  }
-
-  62% {
-    -webkit-transform: translateX(20%);
-  }
-
-  88% {
-    -webkit-transform: translateX(-15%) skewX(15deg);
-  }
-
-  to {
-    -webkit-transform: none;
-    opacity: 1;
-  }
-}
-
 @keyframes speedInRight {
   from {
     transform: translateX(-200%) skewX(-30deg);
@@ -46,35 +22,35 @@
   }
 }
 
-.speedInRight {
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-name: speedInRight;
-  animation-name: speedInRight;
-}
-
-@-webkit-keyframes speedInLeft {
+@-webkit-keyframes speedInRight {
   from {
-    -webkit-transform: translateX(200%) skewX(30deg);
+    -webkit-transform: translateX(-200%) skewX(-30deg);
     opacity: 0;
   }
 
   48% {
-    -webkit-transform: skewX(30deg);
+    -webkit-transform: skewX(-30deg);
   }
 
   62% {
-    -webkit-transform: translateX(-20%);
+    -webkit-transform: translateX(20%);
   }
 
   88% {
-    -webkit-transform: translateX(15%) skewX(-15deg);
+    -webkit-transform: translateX(-15%) skewX(15deg);
   }
 
   to {
     -webkit-transform: none;
     opacity: 1;
   }
+}
+
+.speedInRight {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: speedInRight;
+  animation-name: speedInRight;
 }
 
 @keyframes speedInLeft {
@@ -97,6 +73,30 @@
 
   to {
     transform: none;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes speedInLeft {
+  from {
+    -webkit-transform: translateX(200%) skewX(30deg);
+    opacity: 0;
+  }
+
+  48% {
+    -webkit-transform: skewX(30deg);
+  }
+
+  62% {
+    -webkit-transform: translateX(-20%);
+  }
+
+  88% {
+    -webkit-transform: translateX(15%) skewX(-15deg);
+  }
+
+  to {
+    -webkit-transform: none;
     opacity: 1;
   }
 }

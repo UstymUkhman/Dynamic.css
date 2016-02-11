@@ -1,3 +1,27 @@
+@keyframes materialize {
+  from {
+    opacity: 0;
+    filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -webkit-filter: blur(3px);
+    transform-origin: 50% 50%;
+    transform: scale3d(3, 3, 3);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transform-origin: 50% 50%;
+  }
+}
+
 @-webkit-keyframes materialize {
   from {
     opacity: 0;
@@ -14,27 +38,35 @@
   }
 }
 
-@keyframes materialize {
-  from {
-    opacity: 0;
-    filter: blur(3px);
-    transform-origin: 50% 50%;
-    transform: scale3d(3, 3, 3);
-  }
-
-  to {
-    transform-origin: 50% 50%;
-    filter: blur(0px);
-    transform: none;
-    opacity: 1;
-  }
-}
-
 .materialize {
   -webkit-animation-timing-function: cubic-bezier(.5, .25, .9, .25);
   animation-timing-function: cubic-bezier(.5, .25, .9, .25);
   -webkit-animation-name: materialize;
   animation-name: materialize;
+}
+
+@keyframes vaporize {
+  from {
+    opacity: 1;
+    transform: none;
+    filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transform-origin: 50% 50%;
+  }
+
+  to {
+    opacity: 0;
+    filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -webkit-filter: blur(3px);
+    transform-origin: 50% 50%;
+    transform: scale3d(3, 3, 3);
+  }
 }
 
 @-webkit-keyframes vaporize {
@@ -50,22 +82,6 @@
     -webkit-filter: blur(3px);
     -webkit-transform-origin: 50% 50%;
     -webkit-transform: scale3d(3, 3, 3);
-  }
-}
-
-@keyframes vaporize {
-  from {
-    opacity: 1;
-    transform: none;
-    filter: blur(0px);
-    transform-origin: 50% 50%;
-  }
-
-  to {
-    opacity: 0;
-    filter: blur(3px);
-    transform-origin: 50% 50%;
-    transform: scale3d(3, 3, 3);
   }
 }
 

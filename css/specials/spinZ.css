@@ -1,27 +1,3 @@
-@-webkit-keyframes spinZIn {
-  from {
-    -webkit-transform: perspective(400px) scale3d(.1, .1, .1) rotate3d(0, 0, 1, -360deg);
-    opacity: 0;
-  }
-
-  20% {
-    -webkit-transform: perspective(400px) scale3d(.12, .12, .12) rotate3d(0, 0, 1, -216deg);
-  }
-
-  50% {
-    -webkit-transform: perspective(400px) scale3d(.31, .31, .31) rotate3d(0, 0, 1, 0deg);
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, 216deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    opacity: 1;
-  }
-}
-
 @keyframes spinZIn {
   from {
     transform: perspective(400px) scale3d(.1, .1, .1) rotate3d(0, 0, 1, -360deg);
@@ -46,35 +22,35 @@
   }
 }
 
+@-webkit-keyframes spinZIn {
+  from {
+    -webkit-transform: perspective(400px) scale3d(.1, .1, .1) rotate3d(0, 0, 1, -360deg);
+    opacity: 0;
+  }
+
+  20% {
+    -webkit-transform: perspective(400px) scale3d(.12, .12, .12) rotate3d(0, 0, 1, -216deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(.31, .31, .31) rotate3d(0, 0, 1, 0deg);
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, 216deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    opacity: 1;
+  }
+}
+
 .spinZIn {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-name: spinZIn;
   animation-name: spinZIn;
-}
-
-@-webkit-keyframes spinZOut {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(0, 0, 1, 360deg);
-    opacity: 1;
-  }
-
-  20% {
-    -webkit-transform: perspective(400px) scale3d(.88, .88, .88) rotate3d(0, 0, 1, 216deg);
-  }
-
-  50% {
-    -webkit-transform: perspective(400px) scale3d(.69, .69, .69) rotate3d(0, 0, 1, 0deg);
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, -216deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px) scale3d(.1, .1, .1);
-    opacity: 0;
-  }
 }
 
 @keyframes spinZOut {
@@ -97,6 +73,30 @@
 
   to {
     transform: perspective(400px) scale3d(.1, .1, .1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spinZOut {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 0, 1, 360deg);
+    opacity: 1;
+  }
+
+  20% {
+    -webkit-transform: perspective(400px) scale3d(.88, .88, .88) rotate3d(0, 0, 1, 216deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(.69, .69, .69) rotate3d(0, 0, 1, 0deg);
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) scale3d(.5, .5, .5) rotate3d(0, 0, 1, -216deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px) scale3d(.1, .1, .1);
     opacity: 0;
   }
 }
