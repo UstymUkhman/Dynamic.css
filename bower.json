@@ -1,0 +1,10 @@
+{
+  "author": "Ustym Ukhman",
+  "name": "Dynamic.css",
+  "homepage": "https://github.com/UstymUkhman/Dynamic.css",
+  "main": "dynamic.css",
+  "license": "MIT",
+  "ignore": [
+    ".gitignore"
+  ]
+}

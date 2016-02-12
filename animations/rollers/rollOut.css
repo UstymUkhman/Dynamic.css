@@ -1,0 +1,61 @@
+@keyframes rollOutRight {
+  from {
+    transform: translate3d(0, 0, 0) rotate(-360deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(200%, 0, 0) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rollOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-360deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(200%, 0, 0) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.rollOutRight {
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-name: rollOutRight;
+  animation-name: rollOutRight;
+}
+
+@keyframes rollOutLeft {
+  from {
+    transform: translate3d(0, 0, 0) rotate(360deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(-200%, 0, 0) rotate(-180deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rollOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) rotate(360deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(-200%, 0, 0) rotate(-180deg);
+    opacity: 0;
+  }
+}
+
+.rollOutLeft {
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-name: rollOutLeft;
+  animation-name: rollOutLeft;
+}

@@ -22,16 +22,16 @@ module.exports = function(grunt) {
 
       dist: {
         src: [
-          'css/_dynamic.css',
-          'css/specials/*.css',
-          'css/star wars/*.css',
-          'css/incomers & leavers/*.css',
-          'css/speedy/*.css',
-          'css/stairs/*.css',
-          'css/jumpers/*.css',
-          'css/rollers/*.css',
-          'css/fallers/*.css',
-          'css/turners/*.css'
+          'animations/base.css',
+          'animations/specials/*.css',
+          'animations/star wars/*.css',
+          'animations/incomers & leavers/*.css',
+          'animations/speedy/*.css',
+          'animations/stairs/*.css',
+          'animations/jumpers/*.css',
+          'animations/rollers/*.css',
+          'animations/fallers/*.css',
+          'animations/turners/*.css'
         ],
         dest: '<%= pkg.filename %>.css'
       }

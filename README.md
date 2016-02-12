@@ -6,13 +6,34 @@
 [![Bower version](https://img.shields.io/badge/bower-v1.0.0-blue.svg)]()
 [![GitHub license](https://img.shields.io/cocoapods/l/AFNetworking.svg)](https://opensource.org/licenses/MIT)
 
-**Special thanks to daneden's [Animate.css](https://github.com/daneden/animate.css) and Christian's [magic](https://github.com/miniMAC/magic) for inspiration.<br>
-You're amazing, guys!** :+1:
+Special thanks to daneden's [Animate.css](https://github.com/daneden/animate.css) and Christian's [magic](https://github.com/miniMAC/magic) for inspiration.<br>
+You're amazing, guys! :+1:
 
 **Dynamic.css** is a bunch of awesome, cross-browser CSS animations to use in any project.<br>
 It's perfect to animate incoming and leaving web page elements, but it also could be useful for sliders, `:hover` handlers and all kind of general use.
 
-## Basic Usage
+## Download
+
+You can download it from [Bower](http://bower.io/)
+
+```sh
+bower install git://github.com/UstymUkhman/tf-template.git
+```
+
+or [GitHub](https://github.com/UstymUkhman/Dynamic.css)
+
+```sh
+git clone https://github.com/UstymUkhman/Dynamic.css.git
+```
+
+Then just load the script files in your application:
+
+```html
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/tf-template/dist/tf-template.min.js"></script>
+```
+
+## Usage
 
 1. Include the stylesheet on your document's `<head>`
 
