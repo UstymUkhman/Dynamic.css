@@ -1,10 +1,30 @@
 {
-  "author": "Ustym Ukhman",
+  "author": "https://github.com/UstymUkhman/Dynamic.css/graphs/contributors",
   "name": "Dynamic.css",
+  "description": "Awesome Library of CSS3 animations",
   "homepage": "https://github.com/UstymUkhman/Dynamic.css",
+  "demo": "http://ustymukhman.github.io/Dynamic.css/",
   "main": "dynamic.css",
+  "version": "1.0.0",
   "license": "MIT",
+  "keywords": [
+    "Dynamic.css",
+    "dynamic.css",
+    "Dynamic",
+    "dynamic"
+  ],
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-uglify": "~0.11.0"
+  },
   "ignore": [
+    "bower_components",
+    "node_modules",
     ".gitignore"
+  ],
+  "authors": [
+    "Ustym Ukhman <ustym.ukhman@gmail.com>"
   ]
 }
