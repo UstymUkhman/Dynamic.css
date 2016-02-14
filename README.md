@@ -19,7 +19,7 @@ You can try it at this [demo page](http://ustymukhman.github.io/Dynamic.css/).
 You can download it from [Bower](http://gruntjs.com/getting-started/)
 
 `````sh
-bower install Dynamic.css
+bower install UstymUkhman/Dynamic.css
 `````
 
 or [GitHub](https://github.com/UstymUkhman/Dynamic.css)
