@@ -1,7 +1,7 @@
 # Dynamic.css
 *Awesome Library of CSS3 animations*
 
-[![Dynamic.css build](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)](https://github.com/UstymUkhman/Dynamic.css/blob/master/dynamic.css)
+[![Dynamic.css build](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/UstymUkhman/Dynamic.css/blob/master/dynamic.css)
 [![Dynamic.css release](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)](https://github.com/UstymUkhman/Dynamic.css/)
 [![Bower version](https://img.shields.io/badge/bower-v1.0.0-blue.svg)](http://bower.io/)
 [![GitHub license](https://img.shields.io/cocoapods/l/AFNetworking.svg)](https://github.com/UstymUkhman/Dynamic.css/blob/master/LICENSE)
