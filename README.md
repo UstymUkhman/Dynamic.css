@@ -1,7 +1,7 @@
 # Dynamic.css
 *Awesome Library of CSS3 animations*
 
-[![Dynamic.css build](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/UstymUkhman/Dynamic.css/blob/master/dynamic.css)
+[![Dynamic.css build](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/UstymUkhman/Dynamic.css/blob/master/dist/dynamic.css)
 [![Dynamic.css release](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)](https://github.com/UstymUkhman/Dynamic.css/)
 [![Bower version](https://img.shields.io/badge/bower-v1.0.0-blue.svg)](http://bower.io/)
 [![GitHub license](https://img.shields.io/cocoapods/l/AFNetworking.svg)](https://github.com/UstymUkhman/Dynamic.css/blob/master/LICENSE)
@@ -22,16 +22,18 @@ You can download it from [Bower](http://gruntjs.com/getting-started/)
 bower install UstymUkhman/Dynamic.css
 `````
 
-or [GitHub](https://github.com/UstymUkhman/Dynamic.css)
+[GitHub](https://github.com/UstymUkhman/Dynamic.css)
 
 `````sh
 git clone https://github.com/UstymUkhman/Dynamic.css.git
 `````
 
+or [here](https://ustymukhman.github.io/Dynamic.css/DynamicCSS.zip).
+
 Then just load the script file in your application:
 
 ```html
-<script type="text/javascript" src="bower_components/Dynamic.css/dynamic.css"></script>
+<script type="text/javascript" src="bower_components/Dynamic.css/dist/dynamic.css"></script>
 ```
 
 ## Usage
@@ -121,7 +123,7 @@ Once you've decided the animation to run, you have to add the corresponding CSS 
 $('#elementToAnimate').addClass('dynamic jump');
 `````
 
-The default animation time for the most part of *Dynamic.css* animations is `2 seconds`. Though, if you're not OK with that, you can overwrite the animation duration of the main class like this:
+The default animation time for most *Dynamic.css* animations is `2 seconds`. Though, if you're not OK with that, you can overwrite the animation duration of the main class like this:
 
 `````css
 .dynamic {
@@ -173,7 +175,7 @@ $ sudo npm install grunt-contrib-grunt-contrib-concat --save-dev
 
 $ sudo npm install grunt-contrib-grunt-contrib-uglify --save-dev
 # Actualy, grunt doesn't minify well CSS files, so you can omit this one,
-# but in that case you'll have to minify the builded file manualy.
+# but in that case you'll have to minify builded file manualy.
 `````
 
 Once you've configured `Gruntfile.js`, as described [here](http://gruntjs.com/getting-started#the-gruntfile), go back to your terminal and run `grunt` in the project's folder to compile your custom builds.<br>
@@ -210,7 +212,7 @@ grunt.initConfig({
 });
 `````
 
-But the most important thing of doing this is: **have fun like I did!** :blush:
+But the most important thing is: **have fun like I did!** :blush:
 
 ## License
 Dynamic.css is licensed under the [MIT license](http://opensource.org/licenses/MIT).

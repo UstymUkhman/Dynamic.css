@@ -4,21 +4,18 @@
   "author": "https://github.com/UstymUkhman/Dynamic.css/graphs/contributors",
   "homepage": "https://github.com/UstymUkhman/Dynamic.css",
   "demo": "http://ustymukhman.github.io/Dynamic.css/",
-  "main": "dynamic.css",
+  "main": "dist/dynamic.css",
   "version": "1.0.0",
-  "license": {
-    "type": "MIT",
-    "url": "http://opensource.org/licenses/MIT"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/UstymUkhman/Dynamic.css.git"
   },
   "keywords": [
-    "Dynamic.css",
     "dynamic.css",
-    "Dynamic",
-    "dynamic"
+    "animations",
+    "dynamic",
+    "css"
   ],
   "devDependencies": {
     "bower": "^1.7.7",

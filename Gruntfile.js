@@ -33,7 +33,7 @@ module.exports = function(grunt) {
           'animations/fallers/*.css',
           'animations/turners/*.css'
         ],
-        dest: '<%= pkg.filename %>.css'
+        dest: 'dist/<%= pkg.filename %>.css'
       }
     }
   });
