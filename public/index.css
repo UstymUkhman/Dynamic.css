@@ -1,0 +1,49 @@
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'White Rabbit';
+  src:
+    url('./fonts/white-rabbit/White-Rabbit.eot?') format('eot'),
+    url('./fonts/white-rabbit/White-Rabbit.woff') format('woff'),
+    url('./fonts/white-rabbit/White-Rabbit.ttf') format('truetype'),
+    url('./fonts/white-rabbit/White-Rabbit.svg#WhiteRabbit') format('svg');
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  -webkit-touch-callout: none;
+
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: none;
+  text-size-adjust: none;
+  font-family: monospace;
+  font-weight: 400;
+
+  background-color: rgb(0, 0, 0);
+  backface-visibility: hidden;
+  color: rgb(0, 204, 0);
+  appearance: none;
+
+  user-select: none;
+  overflow: hidden;
+
+  max-height: 100%;
+  min-height: 100%;
+
+  max-width: 100%;
+  min-width: 100%;
+
+  height: 100%;
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
