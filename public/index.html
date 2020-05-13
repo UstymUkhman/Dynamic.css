@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="author" content="Ustym Ukhman">
     <meta name="theme-color" content="#00CC00">
     <meta name="msapplication-TileColor" content="#00CC00">
     <meta name="keywords" content="Ustym,Ukhman,Ustym Ukhman,Dynamic.css,Dynamic">
@@ -18,7 +19,7 @@
 
   <body>
     <div class="element-container">
-      <img src="./cat.jpg" class="element dynamic" />
+      <img id="animated-element" src="./cat.jpg" class="dynamic" />
     </div>
 
     <div class="buttons-container">
@@ -26,23 +27,23 @@
         <h2 class="category-name">Specials</h2>
 
         <div class="category-row">
-          <a class="animation-button text-color jump left hvr-bounce-to-top">jump</a>
-          <a class="animation-button text-color blink right hvr-pulse">blink</a>
+          <a data-animation="jump" class="animation-button text-color jump left hvr-bounce-to-top">jump</a>
+          <a data-animation="blink" class="animation-button text-color blink right hvr-pulse">blink</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button text-color fitIn left hvr-ripple-in">fitIn</a>
-          <a class="animation-button text-color fitOut right hvr-ripple-out">fitOut</a>
+          <a data-animation="fitIn" class="animation-button text-color fitIn left hvr-ripple-in">fitIn</a>
+          <a data-animation="fitOut" class="animation-button text-color fitOut right hvr-ripple-out">fitOut</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button text-color windyX left hvr-bounce-to-right">windyX</a>
-          <a class="animation-button text-color windyY right hvr-bounce-to-bottom">windyY</a>
+          <a data-animation="windyX" class="animation-button text-color windyX left hvr-bounce-to-right">windyX</a>
+          <a data-animation="windyY" class="animation-button text-color windyY right hvr-bounce-to-bottom">windyY</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button text-color materialize left hvr-rectangle-in">materialize</a>
-          <a class="animation-button text-color vaporize right hvr-rectangle-out">vaporize</a>
+          <a data-animation="materialize" class="animation-button text-color materialize left hvr-rectangle-in">materialize</a>
+          <a data-animation="vaporize" class="animation-button text-color vaporize right hvr-rectangle-out">vaporize</a>
         </div>
       </div>
 
@@ -50,18 +51,18 @@
         <h2 class="category-name">Spins</h2>
 
         <div class="category-row">
-          <a class="animation-button text-color spinXUp left hvr-sweep-to-top">spinXUp</a>
-          <a class="animation-button text-color spinXDown right hvr-sweep-to-bottom">spinXDown</a>
+          <a data-animation="spinXUp" class="animation-button text-color spinXUp left hvr-sweep-to-top">spinXUp</a>
+          <a data-animation="spinXDown" class="animation-button text-color spinXDown right hvr-sweep-to-bottom">spinXDown</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button text-color spinYLeft left hvr-sweep-to-left">spinYLeft</a>
-          <a class="animation-button text-color spinYRight right hvr-sweep-to-right">spinYRight</a>
+          <a data-animation="spinYLeft" class="animation-button text-color spinYLeft left hvr-sweep-to-left">spinYLeft</a>
+          <a data-animation="spinYRight" class="animation-button text-color spinYRight right hvr-sweep-to-right">spinYRight</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button text-color spinZIn left hvr-radial-out">spinZIn</a>
-          <a class="animation-button text-color spinZOut right hvr-radial-in">spinZOut</a>
+          <a data-animation="spinZIn" class="animation-button text-color spinZIn left hvr-radial-out">spinZIn</a>
+          <a data-animation="spinZOut" class="animation-button text-color spinZOut right hvr-radial-in">spinZOut</a>
         </div>
       </div>
 
@@ -69,17 +70,17 @@
         <h2 class="category-name">Star Wars</h2>
 
         <div class="category-row">
-          <a class="animation-button starWars center hvr-float">starWars</a>
+          <a data-animation="starWars" class="animation-button starWars center hvr-float">starWars</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button starWarsFrontUp left hvr-sink">starWarsFrontUp</a>
-          <a class="animation-button starWarsFrontDown right hvr-float">starWarsFrontDown</a>
+          <a data-animation="starWarsFrontUp" class="animation-button starWarsFrontUp left hvr-sink">starWarsFrontUp</a>
+          <a data-animation="starWarsFrontDown" class="animation-button starWarsFrontDown right hvr-float">starWarsFrontDown</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button starWarsBackUp left hvr-float">starWarsBackUp</a>
-          <a class="animation-button starWarsBackDown right hvr-sink">starWarsBackDown</a>
+          <a data-animation="starWarsBackUp" class="animation-button starWarsBackUp left hvr-float">starWarsBackUp</a>
+          <a data-animation="starWarsBackDown" class="animation-button starWarsBackDown right hvr-sink">starWarsBackDown</a>
         </div>
       </div>
 
@@ -87,23 +88,23 @@
         <h2 class="category-name">Incomers &amp; Leavers</h2>
 
         <div class="category-row">
-          <a class="animation-button comeInUp left hvr-sink">comeInUp</a>
-          <a class="animation-button comeInDown right hvr-float">comeInDown</a>
+          <a data-animation="comeInUp" class="animation-button comeInUp left hvr-sink">comeInUp</a>
+          <a data-animation="comeInDown" class="animation-button comeInDown right hvr-float">comeInDown</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button comeInLeft left hvr-forward">comeInLeft</a>
-          <a class="animation-button comeInRight right hvr-backward">comeInRight</a>
+          <a data-animation="comeInLeft" class="animation-button comeInLeft left hvr-forward">comeInLeft</a>
+          <a data-animation="comeInRight" class="animation-button comeInRight right hvr-backward">comeInRight</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button comeOutUp left hvr-float">comeOutUp</a>
-          <a class="animation-button comeOutDown right hvr-sink">comeOutDown</a>
+          <a data-animation="comeOutUp" class="animation-button comeOutUp left hvr-float">comeOutUp</a>
+          <a data-animation="comeOutDown" class="animation-button comeOutDown right hvr-sink">comeOutDown</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button comeOutLeft left hvr-backward">comeOutLeft</a>
-          <a class="animation-button comeOutRight right hvr-forward">comeOutRight</a>
+          <a data-animation="comeOutLeft" class="animation-button comeOutLeft left hvr-backward">comeOutLeft</a>
+          <a data-animation="comeOutRight" class="animation-button comeOutRight right hvr-forward">comeOutRight</a>
         </div>
       </div>
 
@@ -111,13 +112,13 @@
         <h2 class="category-name">Speedy</h2>
 
         <div class="category-row">
-          <a class="animation-button speedInLeft left hvr-wobble-skew">speedInLeft</a>
-          <a class="animation-button speedInRight right hvr-wobble-skew">speedInRight</a>
+          <a data-animation="speedInLeft" class="animation-button speedInLeft left hvr-wobble-skew">speedInLeft</a>
+          <a data-animation="speedInRight" class="animation-button speedInRight right hvr-wobble-skew">speedInRight</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button speedOutLeft left hvr-skew-backward">speedOutLeft</a>
-          <a class="animation-button speedOutRight right hvr-skew-forward">speedOutRight</a>
+          <a data-animation="speedOutLeft" class="animation-button speedOutLeft left hvr-skew-backward">speedOutLeft</a>
+          <a data-animation="speedOutRight" class="animation-button speedOutRight right hvr-skew-forward">speedOutRight</a>
         </div>
       </div>
 
@@ -125,18 +126,18 @@
         <h2 class="category-name">Stairs</h2>
 
         <div class="category-row">
-          <a class="animation-button stairsIn left hvr-bob">stairsIn</a>
-          <a class="animation-button stairsOut right hvr-hang">stairsOut</a>
+          <a data-animation="stairsIn" class="animation-button stairsIn left hvr-bob">stairsIn</a>
+          <a data-animation="stairsOut" class="animation-button stairsOut right hvr-hang">stairsOut</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button stairsInLeft left hvr-forward">stairsInLeft</a>
-          <a class="animation-button stairsOutLeft right hvr-backward">stairsOutLeft</a>
+          <a data-animation="stairsInLeft" class="animation-button stairsInLeft left hvr-forward">stairsInLeft</a>
+          <a data-animation="stairsOutLeft" class="animation-button stairsOutLeft right hvr-backward">stairsOutLeft</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button stairsInRight left hvr-backward">stairsInRight</a>
-          <a class="animation-button stairsOutRight right hvr-forward">stairsOutRight</a>
+          <a data-animation="stairsInRight" class="animation-button stairsInRight left hvr-backward">stairsInRight</a>
+          <a data-animation="stairsOutRight" class="animation-button stairsOutRight right hvr-forward">stairsOutRight</a>
         </div>
       </div>
 
@@ -144,18 +145,18 @@
         <h2 class="category-name">Jumpers</h2>
 
         <div class="category-row">
-          <a class="animation-button hopIn left hvr-wobble-vertical">hopIn</a>
-          <a class="animation-button hopOut right hvr-wobble-vertical">hopOut</a>
+          <a data-animation="hopIn" class="animation-button hopIn left hvr-wobble-vertical">hopIn</a>
+          <a data-animation="hopOut" class="animation-button hopOut right hvr-wobble-vertical">hopOut</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button hopInLeft left hvr-wobble-vertical">hopInLeft</a>
-          <a class="animation-button hopOutLeft right hvr-wobble-horizontal">hopOutLeft</a>
+          <a data-animation="hopInLeft" class="animation-button hopInLeft left hvr-wobble-vertical">hopInLeft</a>
+          <a data-animation="hopOutLeft" class="animation-button hopOutLeft right hvr-wobble-horizontal">hopOutLeft</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button hopInRight left hvr-wobble-vertical">hopInRight</a>
-          <a class="animation-button hopOutRight right hvr-wobble-horizontal">hopOutRight</a>
+          <a data-animation="hopInRight" class="animation-button hopInRight left hvr-wobble-vertical">hopInRight</a>
+          <a data-animation="hopOutRight" class="animation-button hopOutRight right hvr-wobble-horizontal">hopOutRight</a>
         </div>
       </div>
 
@@ -163,28 +164,28 @@
         <h2 class="category-name">Rollers</h2>
 
         <div class="category-row">
-          <a class="animation-button text-color rollInLeft left hvr-sweep-to-right">rollInLeft</a>
-          <a class="animation-button text-color rollInRight right hvr-sweep-to-left">rollInRight</a>
+          <a data-animation="rollInLeft" class="animation-button text-color rollInLeft left hvr-sweep-to-right">rollInLeft</a>
+          <a data-animation="rollInRight" class="animation-button text-color rollInRight right hvr-sweep-to-left">rollInRight</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button text-color rollOutLeft left hvr-sweep-to-left">rollOutLeft</a>
-          <a class="animation-button text-color rollOutRight right hvr-sweep-to-right">rollOutRight</a>
+          <a data-animation="rollOutLeft" class="animation-button text-color rollOutLeft left hvr-sweep-to-left">rollOutLeft</a>
+          <a data-animation="rollOutRight" class="animation-button text-color rollOutRight right hvr-sweep-to-right">rollOutRight</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button text-color rollDownUp left hvr-sweep-to-bottom">rollDownUp</a>
-          <a class="animation-button text-color rollUpDown right hvr-sweep-to-top">rollUpDown</a>
+          <a data-animation="rollDownUp" class="animation-button text-color rollDownUp left hvr-sweep-to-bottom">rollDownUp</a>
+          <a data-animation="rollUpDown" class="animation-button text-color rollUpDown right hvr-sweep-to-top">rollUpDown</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button rollDownLeft left hvr-overline-from-left">rollDownLeft</a>
-          <a class="animation-button rollUpLeft right hvr-underline-from-left">rollUpLeft</a>
+          <a data-animation="rollDownLeft" class="animation-button rollDownLeft left hvr-overline-from-left">rollDownLeft</a>
+          <a data-animation="rollUpLeft" class="animation-button rollUpLeft right hvr-underline-from-left">rollUpLeft</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button rollDownRight left hvr-overline-from-right">rollDownRight</a>
-          <a class="animation-button rollUpRight right hvr-underline-from-right">rollUpRight</a>
+          <a data-animation="rollDownRight" class="animation-button rollDownRight left hvr-overline-from-right">rollDownRight</a>
+          <a data-animation="rollUpRight" class="animation-button rollUpRight right hvr-underline-from-right">rollUpRight</a>
         </div>
       </div>
 
@@ -192,17 +193,17 @@
         <h2 class="category-name">Fallers</h2>
 
         <div class="category-row">
-          <a class="animation-button text-color fallDownUp center hvr-sweep-to-bottom">fallDownUp</a>
+          <a data-animation="fallDownUp" class="animation-button text-color fallDownUp center hvr-sweep-to-bottom">fallDownUp</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button text-color fallDownLeft left hvr-bounce-to-right">fallDownLeft</a>
-          <a class="animation-button text-color fallDownRight right hvr-bounce-to-left">fallDownRight</a>
+          <a data-animation="fallDownLeft" class="animation-button text-color fallDownLeft left hvr-bounce-to-right">fallDownLeft</a>
+          <a data-animation="fallDownRight" class="animation-button text-color fallDownRight right hvr-bounce-to-left">fallDownRight</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button text-color fallDownIn left hvr-shutter-in-vertical">fallDownIn</a>
-          <a class="animation-button text-color fallDownOut right hvr-shutter-out-vertical">fallDownOut</a>
+          <a data-animation="fallDownIn" class="animation-button text-color fallDownIn left hvr-shutter-in-vertical">fallDownIn</a>
+          <a data-animation="fallDownOut" class="animation-button text-color fallDownOut right hvr-shutter-out-vertical">fallDownOut</a>
         </div>
       </div>
 
@@ -210,13 +211,13 @@
         <h2 class="category-name">Turners</h2>
 
         <div class="category-row">
-          <a class="animation-button roundOutLeft left hvr-wobble-vertical">roundOutLeft</a>
-          <a class="animation-button roundOutRight right hvr-wobble-vertical">roundOutRight</a>
+          <a data-animation="roundOutLeft" class="animation-button roundOutLeft left hvr-wobble-vertical">roundOutLeft</a>
+          <a data-animation="roundOutRight" class="animation-button roundOutRight right hvr-wobble-vertical">roundOutRight</a>
         </div>
 
         <div class="category-row">
-          <a class="animation-button text-color roundSlideRight left hvr-shutter-out-horizontal">roundSlideRight</a>
-          <a class="animation-button text-color roundSlideLeft right hvr-shutter-out-horizontal">roundSlideLeft</a>
+          <a data-animation="roundSlideRight" class="animation-button text-color roundSlideRight left hvr-shutter-out-horizontal">roundSlideRight</a>
+          <a data-animation="roundSlideLeft" class="animation-button text-color roundSlideLeft right hvr-shutter-out-horizontal">roundSlideLeft</a>
         </div>
       </div>
     </div>

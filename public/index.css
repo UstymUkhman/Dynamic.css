@@ -42,6 +42,31 @@ html {
 }
 
 body {
+  -ms-scrollbar-darkshadow-color:#000;
+  -ms-scrollbar-highlight-color: #0C0;
+  -ms-scrollbar-3dlight-color:#000;
+  -ms-scrollbar-color: #060 #000;
+
+  -ms-scrollbar-shadow-color:#000;
+  -ms-scrollbar-track-color: #000;
+  -ms-scrollbar-arrow-color:#000;
+  -ms-scrollbar-base-color: #060;
+  -ms-scrollbar-face-color: #060;
+
+  scrollbar-darkshadow-color:#000;
+  scrollbar-highlight-color: #0C0;
+  scrollbar-3dlight-color:#000;  
+  scrollbar-color: #060 #000;
+
+  scrollbar-shadow-color:#000;
+  scrollbar-track-color: #000;
+  scrollbar-arrow-color:#000;
+  scrollbar-base-color: #060;
+  scrollbar-face-color: #060;
+
+  -ms-scrollbar-width: thin;
+  scrollbar-width: thin;
+
   padding: 0;
   margin: 0;
 }
@@ -55,7 +80,7 @@ body {
   left: 0;
 }
 
-.element-container .element {
+#animated-element {
   border: solid 1px rgb(0, 0, 0);
   border-radius: 50%;
 
@@ -117,6 +142,8 @@ body {
 .animation-button {
   border: solid 1px rgb(0, 102, 0);
   background-color: rgb(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 
   color: rgb(0, 102, 0);
   font-family: monospace;
@@ -186,6 +213,7 @@ body {
 }
 
 .animation-button.hvr-ripple-in:hover {
+  animation: ripple-border 1s linear forwards;
   color: rgb(0, 204, 0);
 }
 
@@ -271,7 +299,7 @@ body {
     z-index: 1;
   }
 
-  .element-container .element {
+  #animated-element {
     height: 100px;
     width: 100px;
   }
@@ -343,4 +371,75 @@ body {
     background-color: rgb(0, 204, 0);
     opacity: 0.5;
   }
+}
+
+@-webkit-keyframes ripple-border {
+  0% {
+    border-color: transparent;
+  }
+
+  99% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: rgb(0, 102, 0);
+  }
+}
+
+@-moz-keyframes ripple-border {
+  0% {
+    border-color: transparent;
+  }
+
+  99% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: rgb(0, 102, 0);
+  }
+}
+
+@-o-keyframes ripple-border {
+  0% {
+    border-color: transparent;
+  }
+
+  99% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: rgb(0, 102, 0);
+  }
+}
+
+@keyframes ripple-border {
+  0% {
+    border-color: transparent;
+  }
+
+  99% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: rgb(0, 102, 0);
+  }
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background-color: #0C0;
+}
+
+::-webkit-scrollbar-thumb {
+  transition: background-color 0.5s;
+  background-color: #060;
+}
+
+::-webkit-scrollbar {
+  background-color: #000;
+  width: 5px;
 }
