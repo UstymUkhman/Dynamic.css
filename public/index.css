@@ -3,10 +3,10 @@
   font-style: normal;
   font-family: 'White Rabbit';
   src:
-    url('./fonts/white-rabbit/White-Rabbit.eot?') format('eot'),
-    url('./fonts/white-rabbit/White-Rabbit.woff') format('woff'),
-    url('./fonts/white-rabbit/White-Rabbit.ttf') format('truetype'),
-    url('./fonts/white-rabbit/White-Rabbit.svg#WhiteRabbit') format('svg');
+    url('./fonts/White-Rabbit.eot?') format('eot'),
+    url('./fonts/White-Rabbit.woff') format('woff'),
+    url('./fonts/White-Rabbit.ttf') format('truetype'),
+    url('./fonts/White-Rabbit.svg#WhiteRabbit') format('svg');
 }
 
 html {
@@ -25,10 +25,8 @@ html {
   background-color: rgb(0, 0, 0);
   backface-visibility: hidden;
   color: rgb(0, 204, 0);
-  appearance: none;
-
   user-select: none;
-  overflow: hidden;
+  appearance: none;
 
   max-height: 100%;
   min-height: 100%;
@@ -46,4 +44,303 @@ html {
 body {
   padding: 0;
   margin: 0;
+}
+
+.element-container {
+  pointer-events: none;
+  position: fixed;
+
+  height: 100%;
+  width: 33%;
+  left: 0;
+}
+
+.element-container .element {
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 50%;
+
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.buttons-container {
+  position: absolute;
+  margin-top: 150px;
+
+  height: 100%;
+  width: 66%;
+  right: 0;
+}
+
+.category-container {
+  text-align: center;
+  margin: 0 0 100px;
+  padding: 15px 0;
+}
+
+.category-container:last-child {
+  margin-bottom: 150px;
+}
+
+.category-container .category-name {
+  border-bottom: solid 1px rgb(0, 102, 0);
+  font-family: 'White Rabbit';
+  color: rgb(0, 102, 0);
+  text-decoration: none;
+
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+  margin: 0 auto 50px;
+  text-align: center;
+
+  font-weight: 200;
+  font-size: 40px;
+  display: table;
+}
+
+.category-container .category-row {
+  margin: 0 auto 50px;
+  position: relative;
+  display: block;
+
+  height: 30px;
+  width: 600px;
+}
+
+.animation-button {
+  border: solid 1px rgb(0, 102, 0);
+  background-color: rgb(0, 0, 0);
+
+  color: rgb(0, 102, 0);
+  font-family: monospace;
+  text-decoration: none;
+  display: inline-block;
+
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+  line-height: 20px;
+
+  padding: 5px 16px;
+  border-radius: 0;
+  font-weight: 300;
+  font-size: 16px;
+
+  min-height: 20px;
+  min-width: 125px;
+  cursor: pointer;
+  outline: none;
+}
+
+.animation-button.left {
+  float: left;
+}
+
+.animation-button.center {
+  max-width: 159px;
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+
+.animation-button.right {
+  float: right;
+}
+
+.animation-button.text-color {
+  transition: color 1s 0.25s;
+}
+
+.animation-button.text-color:hover,
+.animation-button.text-color:focus,
+.animation-button.text-color:active {
+  color: rgb(0, 0, 0);
+}
+
+.animation-button.jump::before {
+  background-color: rgb(0, 204, 0);
+}
+
+.animation-button.blink {
+  animation-name: hvr-back-pulse;
+}
+
+.animation-button.blink:hover,
+.animation-button.blink:focus,
+.animation-button.blink:active {
+  background-color: rgb(0, 204, 0);
+}
+
+.animation-button.hvr-radial-out,
+.animation-button.hvr-rectangle-out,
+.animation-button.hvr-shutter-out-vertical,
+.animation-button.hvr-shutter-out-horizontal {
+  background-color: rgb(0, 0, 0);
+}
+
+.animation-button.hvr-ripple-in:hover {
+  color: rgb(0, 204, 0);
+}
+
+.animation-button.hvr-ripple-in::before {
+  border-color: rgb(0, 102, 0);
+  border-width: 1px;
+}
+
+.animation-button.hvr-ripple-out {
+  border-width: 0px;
+}
+
+.animation-button.hvr-ripple-out:hover {
+  color: rgb(0, 204, 0);
+}
+
+.animation-button.hvr-ripple-out::before {
+  border-color: rgb(0, 102, 0);
+  border-width: 1px;
+}
+
+.animation-button.hvr-rectangle-in,
+.animation-button.hvr-shutter-in-vertical {
+  background-color: rgb(0, 204, 0);
+}
+
+.animation-button.hvr-rectangle-in::before,
+.animation-button.hvr-shutter-in-vertical::before {
+  background: rgb(0, 0, 0);
+}
+
+.animation-button.hvr-radial-in,
+.animation-button.hvr-radial-out::before,
+.animation-button.hvr-sweep-to-top::before,
+.animation-button.hvr-sweep-to-left::before,
+.animation-button.hvr-rectangle-out::before,
+.animation-button.hvr-sweep-to-right::before,
+.animation-button.hvr-bounce-to-left::before,
+.animation-button.hvr-bounce-to-right::before,
+.animation-button.hvr-sweep-to-bottom::before,
+.animation-button.hvr-bounce-to-bottom::before,
+.animation-button.hvr-overline-from-left::before,
+.animation-button.hvr-overline-from-right::before,
+.animation-button.hvr-underline-from-left::before,
+.animation-button.hvr-shutter-out-vertical::before,
+.animation-button.hvr-underline-from-right::before,
+.animation-button.hvr-shutter-out-horizontal::before {
+  background: rgb(0, 204, 0);
+}
+
+.animation-button.hvr-radial-in::before,
+.animation-button.hvr-shutter-in-vertical::before {
+  background: rgb(0, 0, 0);
+}
+
+.animation-button.hvr-overline-from-left::before,
+.animation-button.hvr-underline-from-left::before,
+.animation-button.hvr-overline-from-right::before,
+.animation-button.hvr-underline-from-right::before {
+  height: 1px;
+}
+
+.animation-button.hvr-overline-from-left,
+.animation-button.hvr-overline-from-right,
+.animation-button.hvr-underline-from-left,
+.animation-button.hvr-underline-from-right {
+  transition: border-color 0.25s;
+}
+
+.animation-button.hvr-overline-from-left:hover,
+.animation-button.hvr-overline-from-right:hover,
+.animation-button.hvr-underline-from-left:hover,
+.animation-button.hvr-underline-from-right:hover {
+  border-color: transparent;
+}
+
+@media only screen and (max-width: 991px) {
+  .element-container {
+    height: 100px;
+    width: 100%;
+  
+    top: 100px;
+    z-index: 1;
+  }
+
+  .element-container .element {
+    height: 100px;
+    width: 100px;
+  }
+
+  .buttons-container {
+    margin-top: 250px;
+    width: 80%;
+    left: 10%;
+  }
+
+  .category-container:last-child {
+    margin-bottom: 50px;
+  }
+
+  .category-container .category-row {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .element-container {
+    top: 75px;
+  }
+
+  .buttons-container {
+    margin-top: 200px;
+    width: 95%;
+    left: 2.5%;
+  }
+
+  .category-container {
+    margin-bottom: 50px;
+  }
+
+  .category-container .category-name {
+    letter-spacing: 1px;
+    font-size: 30px;
+  }
+
+  .category-container .animation-button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgb(0, 204, 0);
+    opacity: 0.5;
+  }
+}
+
+@-moz-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgb(0, 204, 0);
+    opacity: 0.5;
+  }
+}
+
+@-o-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgb(0, 204, 0);
+    opacity: 0.5;
+  }
+}
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgb(0, 204, 0);
+    opacity: 0.5;
+  }
 }
