@@ -14,6 +14,8 @@ It's perfect to animate incoming and leaving web page elements, but it also coul
 
 You can try it at this [demo page](http://54.93.165.244/experiments/DynamicCss/).
 
+![](./public/preview.gif)
+
 ## Download
 
 You can download it from [Bower](http://gruntjs.com/getting-started/)
