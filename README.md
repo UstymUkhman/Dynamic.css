@@ -1,4 +1,4 @@
-# [Dynamic.css](http://35.158.218.205/experiments/DynamicCss/) #
+# [Dynamic.css](https://ustymukhman.github.io/Dynamic.css/public/) #
 
 *Awesome Library of CSS3 animations*
 
@@ -13,7 +13,7 @@ You're amazing, guys! :+1:
 **Dynamic.css** is a bunch of awesome, cross-browser CSS animations to use in any project.<br>
 It's perfect to animate incoming and leaving web page elements, but it also could be useful for sliders, `:hover` handlers and all kind of general use.
 
-You can try it at this [demo page](http://35.158.218.205/experiments/DynamicCss/).
+You can try it at this [demo page](https://ustymukhman.github.io/Dynamic.css/public/).
 
 ![](./public/preview.gif)
 
